@@ -15,7 +15,7 @@ const Footer = () => {
             >
               Backend-Verse
             </a> */}
-            <span className="mr-4 font-bold text-neutral-500">Mis redes</span>
+            <span className="mx-4 font-bold text-neutral-500">Mis redes</span>
             <a
               href={`https://github.com/fabiankaraben`}
               className="mx-3 font-bold hover:underline"
