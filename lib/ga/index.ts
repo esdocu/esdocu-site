@@ -1,4 +1,4 @@
-export const GA_TRACKING_ID = "UA-215112498-1";
+export const GA_TRACKING_ID = "G-YPEZ7EJ1LQ";
 
 const isProduction = process.env.NODE_ENV === "production";
 
