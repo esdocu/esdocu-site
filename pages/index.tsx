@@ -29,15 +29,32 @@ const Index = ({ allPosts }: Props) => {
           <p className="text-lg mb-2">El proyecto pretende no solo realizar las traducciones, sino también mantenerlas siempre actualizadas y sincronizadas con la versión original en inglés.</p>
           <p className="text-lg mb-2">Esdocu es un proyecto open source, por lo que cualquiera que lo desee puede colaborar a través de los repositorios en nuestra cuenta de <a href="https://github.com/esdocu" target="_blank" className="text-sky-600 hover:text-sky-800">GitHub</a>.</p>
 
+          <h2 className="text-4xl mb-5 mt-12">Traducciones finalizadas</h2>
+          <ul className="list-disc list-inside">
+            <li className="text-lg mb-2">
+              <a href="https://bootstrap.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
+                Bootstrap en Español
+              </a>
+            </li>
+          </ul>
+
+
           <h2 className="text-4xl mb-5 mt-12">Traducciones en proceso</h2>
-          <p className="text-lg mb-2">Bootstrap: {' '}
-            <a href="https://bootstrap.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
-              Bootstrap en Español
-            </a>
-          </p>
+          <ul className="list-disc list-inside">
+            <li className="text-lg mb-2">
+              <a href="https://chartjs.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
+                Chart.js en Español
+              </a>
+            </li>
+          </ul>
 
           <h2 className="text-4xl mb-5 mt-12">Siguientes traducciones</h2>
-          <p className="text-lg mb-2">Tailwind CSS</p>
+          <p className="text-lg mb-2"></p>
+          <ul className="list-disc list-inside">
+            <li className="text-lg mb-2">
+              Tailwind CSS
+            </li>
+          </ul>
 
           <h2 className="text-4xl mb-5 mt-12">¿Cómo mantenemos las traducciones actualizadas?</h2>
           <p className="text-lg mb-2">Luego de finalizar la primera traducción completa de una documentación, nuestro sistema monitorea las modificaciones (commits) que se realicen en el repositorio original en inglés. En ese momento analizamos el commit y aplicamos los mismos cambios (si están relacionados con el contenido de documentación) al repositorio de la traducción al español.</p>
