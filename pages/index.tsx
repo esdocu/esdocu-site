@@ -42,7 +42,7 @@ const Index = ({ allPosts }: Props) => {
           <ul className="list-disc list-inside">
             <li className="text-lg mb-2">
               <a href="https://tailwind.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
-                Tailwind CSS
+                Tailwind CSS en Español
               </a>
             </li>
             <li className="text-lg mb-2">
