@@ -38,9 +38,13 @@ const Index = ({ allPosts }: Props) => {
             </li>
           </ul>
 
-
           <h2 className="text-4xl mb-5 mt-12">Traducciones en proceso</h2>
           <ul className="list-disc list-inside">
+            <li className="text-lg mb-2">
+              <a href="https://tailwind.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
+                Tailwind CSS
+              </a>
+            </li>
             <li className="text-lg mb-2">
               <a href="https://chartjs.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
                 Chart.js en Español
@@ -52,7 +56,10 @@ const Index = ({ allPosts }: Props) => {
           <p className="text-lg mb-2"></p>
           <ul className="list-disc list-inside">
             <li className="text-lg mb-2">
-              Tailwind CSS
+              Puedes proponer las siguientes traducciones{' '}
+              <a href="https://www.instagram.com/fab.k.dev/" target="_blank" className="text-sky-600 hover:text-sky-800">
+                enviándome un DM
+              </a>
             </li>
           </ul>
 
