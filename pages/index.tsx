@@ -41,12 +41,12 @@ const Index = ({ allPosts }: Props) => {
           <h2 className="text-4xl mb-5 mt-12">Traducciones en proceso</h2>
           <ul className="list-disc list-inside">
             <li className="text-lg mb-2">
-              <a href="https://tailwind.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
+              <a href="https://github.com/esdocu/tailwind" target="_blank" className="text-sky-600 hover:text-sky-800">
                 Tailwind CSS en Español
               </a>
             </li>
             <li className="text-lg mb-2">
-              <a href="https://chartjs.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
+              <a href="https://github.com/esdocu/chartjs" target="_blank" className="text-sky-600 hover:text-sky-800">
                 Chart.js en Español
               </a>
             </li>
