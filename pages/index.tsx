@@ -32,7 +32,7 @@ const Index = ({ allPosts }: Props) => {
           <h2 className="text-4xl mb-5 mt-12">Traducciones finalizadas</h2>
           <ul className="list-disc list-inside">
             <li className="text-lg mb-2">
-              <a href="https://bootstrap.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
+              <a href="https://getbootstrap.esdocu.com" target="_blank" className="text-sky-600 hover:text-sky-800">
                 Bootstrap en Español
               </a>
             </li>
