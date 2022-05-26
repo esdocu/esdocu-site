@@ -73,13 +73,32 @@ const Index = ({ allPosts }: Props) => {
           <p className="text-lg mb-2">¡Gracias por tu comprensión y apoyo!</p>
 
           <h2 className="text-4xl mb-5 mt-12" id="donaciones">Donaciones</h2>
-          <p className="text-lg mb-2">Puedes apoyar este proyecto con una donación a través del siguiente enlace, o adquiriendo uno de los servicios recomendados a través de las publicidades que se muestran en el contenido traducido:</p>
-          <p className="text-lg mb-12">
-            <a href="https://www.buymeacoffee.com/esdocu" target="_blank" className="text-sky-600 hover:text-sky-800">
-              Buy me a Coffee
-            </a>
-          </p>
+          <p className="text-lg mb-2">Puedes apoyar este proyecto con una donación a través de los siguientes enlaces:</p>
 
+          <h3 className="text-2xl mb-5 mt-12">Mercado pago</h3>
+
+          <p>Puedes colaborar realizando una:</p>
+
+          <ul className="list-disc list-inside mt-5">
+            <li className="mb-2">
+            Donación única, enviando dinero al email <strong>hola.esdocu@gmail.com</strong> desde <a href="https://www.mercadopago.com.ar" target="_blank" className="text-sky-600 hover:text-sky-800">Mercado Pago</a>
+            </li>
+          </ul>
+
+          <p className="mt-5">o puedes suscribirte para colaborar todos los meses (te puedes dar de baja cuando quieras):</p>
+
+          <ul className="list-disc list-inside mt-5">
+            <li className="mb-2">
+              <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808481016c3a0181019e94180018" target="_blank" className="text-sky-600 hover:text-sky-800">
+                Suscripción por el monto que prefieras (en ARS)
+              </a>
+            </li>
+          </ul>
+
+          <h3 className="text-2xl mb-5 mt-12">Buy me a Coffee</h3>
+          <a href="https://www.buymeacoffee.com/esdocu" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{height: '60px', width: '217px'}} /></a>
+
+          <h3 className="text-2xl mb-7 mt-12">¡Gracias!</h3>
 
           {/* {heroPost && (
             <HeroPost
