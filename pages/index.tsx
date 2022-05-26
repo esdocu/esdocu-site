@@ -75,7 +75,7 @@ const Index = ({ allPosts }: Props) => {
           <h2 className="text-4xl mb-5 mt-12" id="donaciones">Donaciones</h2>
           <p className="text-lg mb-2">Puedes apoyar este proyecto con una donación a través de los siguientes enlaces:</p>
 
-          <h3 className="text-2xl mb-5 mt-12">Mercado pago</h3>
+          <h3 className="text-2xl mb-5 mt-12">Mercado Pago</h3>
 
           <p>Puedes colaborar realizando una:</p>
 
