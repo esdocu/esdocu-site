@@ -72,10 +72,10 @@ const Index = ({ allPosts }: Props) => {
           <p className="text-lg mb-2">Aunque sería ideal un contenido limpio y sin publicidades, este proyecto se financia de esta manera y con los aportes de los donantes.</p>
           <p className="text-lg mb-2">¡Gracias por tu comprensión y apoyo!</p>
 
-          <h2 className="text-4xl mb-5 mt-12">Donaciones</h2>
+          <h2 className="text-4xl mb-5 mt-12" id="donaciones">Donaciones</h2>
           <p className="text-lg mb-2">Puedes apoyar este proyecto con una donación a través del siguiente enlace, o adquiriendo uno de los servicios recomendados a través de las publicidades que se muestran en el contenido traducido:</p>
           <p className="text-lg mb-12">
-            <a href="https://www.buymeacoffee.com/fabiankaraben" target="_blank" className="text-sky-600 hover:text-sky-800">
+            <a href="https://www.buymeacoffee.com/esdocu" target="_blank" className="text-sky-600 hover:text-sky-800">
               Buy me a Coffee
             </a>
           </p>
