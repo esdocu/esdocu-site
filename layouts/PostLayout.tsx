@@ -74,7 +74,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     <li className="flex items-center space-x-2" key={author.name}>
                       {author.avatar && (
                         <Image
-                          src={`/..${author.avatar}`}
+                          src={`/${author.avatar}`}
                           width="38px"
                           height="38px"
                           alt="avatar"
@@ -102,13 +102,13 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
+              <div className="prose max-w-none pt-10 pb-8 text-lg dark:prose-dark">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 {/* <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
                 {` • `} */}
-                <Link href={editUrl(slug)}>{'View on GitHub'}</Link>
+                <Link href={editUrl(slug)}>{'Ver en GitHub'}</Link>
               </div>
               {/* <Comments frontMatter={content} /> */}
             </div>
@@ -131,7 +131,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     {prev && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Previous Article
+                          Artículo anterior
                         </h2>
                         <div className="text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
@@ -141,7 +141,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     {next && (
                       <div>
                         <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                          Next Article
+                          Siguiente artículo
                         </h2>
                         <div className="text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
@@ -156,7 +156,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   href="/blog"
                   className="text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400"
                 >
-                  &larr; Back to the blog
+                  &larr; Volver al blog
                 </Link>
               </div>
             </footer>
