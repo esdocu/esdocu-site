@@ -379,7 +379,7 @@ En `.example-name` , usamos un selector anidado para apuntar al elemento de inte
 Los módulos CSS son otra ligera alternativa a algo como CSS o SASS. 
 
 Lo bueno de los módulos CSS es que se pueden usar con CSS normal o SASS.
-Además, si está utilizando la aplicación Create React, puede comenzar a usar módulos CSS sin ninguna configuración.
+Además, si estás utilizando la aplicación Create React, puedes comenzar a usar módulos CSS sin ninguna configuración.
 
 Aquí está nuestra aplicación escrita con módulos CSS:
 
@@ -432,12 +432,12 @@ export default function App() {
 ```
 
 Nuestro archivo CSS tiene el nombre `.module` antes de la extensión `.css`. 
-Cualquier archivo de módulo CSS debe tener el nombre "módulo" y terminar con la extensión apropiada (si estamos usando CSS o SASS/SCSS). 
+Cualquier archivo de módulo CSS debe tener el nombre `.module` y terminar con la extensión apropiada (si estamos usando CSS o SASS/SCSS). 
 
 Lo que es interesante notar si observamos el código anterior es que los módulos CSS se escriben como CSS normal, 
 pero se importan y usan como si se crearan como objetos (estilos en línea). 
 
-El beneficio de los módulos CSS es que ayuda a evitar nuestro problema de conflictos de clases con CSS normal. 
+El beneficio de los módulos CSS es que ayuda a evitar problemas de conflictos de clases con CSS normal. 
 Las propiedades a las que hacemos referencia se convierten en nombres de clase únicos que no pueden entrar en conflicto entre sí 
 cuando se construye nuestro proyecto. 
 
@@ -460,7 +460,7 @@ predecibles que solo se aplican a uno u otro componente.
 
 - Los estilos están en el ámbito de uno u otro componente (a diferencia de CSS / SASS)
 - Los nombres de clase únicos y generados garantizan que no haya conflictos de estilo
-- Puede usarlos inmediatamente sin configuración en proyectos CRA
+- Puedes usarlos inmediatamente sin configuración en proyectos CRA
 - Se puede usar con SASS/CSS
 
 **Contras:**
@@ -474,10 +474,10 @@ Similar a cómo React nos permitió escribir HTML como JavaScript con JSX, CSS-i
 
 CSS-in-JS nos permite escribir estilos CSS directamente en los archivos javascript (.js) de nuestros componentes. 
 
-No solo le permite escribir reglas de estilo CSS sin tener que crear un solo archivo .css, sino que estos estilos se limitan 
+No solo te permite escribir reglas de estilo CSS sin tener que crear un solo archivo .css, sino que estos estilos se limitan 
 a componentes individuales. 
 
-En otras palabras, puede agregar, cambiar o eliminar CSS sin sorpresas. 
+En otras palabras, puedes agregar, cambiar o eliminar CSS sin sorpresas. 
 Cambiar los estilos de un componente no afectará los estilos del resto de su aplicación. 
 
 CSS-in-JS a menudo hace uso de un tipo especial de función de JavaScript llamada literal de plantilla etiquetada. 
@@ -510,21 +510,19 @@ export default function App() {
 }
 ```
 
-[IMG]
+Ten en cuenta algunas cosas aquí: 
 
-Tenga en cuenta algunas cosas aquí: 
+1. Puedes escribir estilos CSS normales, pero puedes incluir estilos anidados y pseudoclases (como el desplazamiento). 
+2. Puedes asociar estilos con cualquier elemento HTML válido, como el elemento de botón anterior (consulta `styled.button`). 
+3. Puedes crear nuevos componentes con estos estilos asociados. Mira cómo se usa Button en nuestro componente de aplicación. 
 
-1. Puede escribir estilos CSS normales, pero puede incluir estilos anidados y pseudoclases (como el desplazamiento). 
-2. Puede asociar estilos con cualquier elemento HTML válido, como el elemento de botón anterior (consulte styled.button). 
-3. Puede crear nuevos componentes con estos estilos asociados. Vea cómo se usa Button en nuestro componente de aplicación. 
-
-Dado que este es un componente, ¿se le pueden pasar accesorios? ¡Sí! 
+Dado que este es un componente, ¿se le pueden pasar props? ¡Sí! 
 Podemos exportar este componente y usarlo en cualquier parte de nuestra aplicación que queramos, 
-además de darle características dinámicas a través de accesorios. 
+además de darle características dinámicas a través de props. 
 
-Digamos que desea una variante invertida del botón de arriba con un fondo y texto invertidos. No hay problema. 
+Digamos que deseas una variante invertida del botón de arriba con un fondo y texto invertidos. No hay problema. 
 
-Pase el accesorio invertido a nuestro segundo botón y en Botón, puede acceder a todos los accesorios pasados ​​al componente usando 
+Pasa la prop `inverted` a nuestro segundo botón y en `Button`, puedes acceder a todas las props pasadas ​​al componente usando 
 la sintaxis `${}` con una función interna.
 
 ```javascript
@@ -554,39 +552,35 @@ export default function App() {
 }
 ```
 
-En el retorno de la función, puede seleccionar el accesorio invertido y usar un ternario para determinar 
+En el retorno de la función, puede seleccionar la prop `inverted` y usar un ternario para determinar 
 condicionalmente el color del fondo y el texto. 
-
-Aquí está el resultado:
-
-[IMG]
 
 Hay muchos más beneficios al usar una biblioteca CSS-in-JS para diseñar sus aplicaciones React (demasiados para cubrir aquí), 
 algunos de los cuales enumeraré a continuación. 
 
-Asegúrese de consultar las dos bibliotecas CSS-in-JS más populares para React: Emotion y Styled Components. 
+Asegúrate de consultar las dos bibliotecas CSS-in-JS más populares para React: *Emotion* y *Styled Components*. 
 
-Una desventaja de usar bibliotecas CSS-in-JS es agregar una biblioteca adicional a su proyecto. 
-Sin embargo, diría que esto vale fácilmente la experiencia de desarrollador mejorada que tiene al diseñar sus 
+Una desventaja de usar bibliotecas CSS-in-JS es agregar una biblioteca adicional a tu proyecto. 
+Sin embargo, diría que esto vale fácilmente la experiencia de desarrollador mejorada que tienes al diseñar tus 
 aplicaciones React en lugar de CSS simple.
 
 **Pros:**
 
 - CSS-in-JS es predecible: los estilos se limitan a componentes individuales
-- Dado que nuestro CSS ahora es JS, podemos exportar, reutilizar e incluso extender nuestros estilos a través de accesorios.
-- Las bibliotecas CSS-in-JS aseguran que no haya conflictos de estilo al generar nombres de clase únicos para sus estilos escritos
-- No es necesario centrarse en las convenciones de nomenclatura de sus clases, ¡simplemente escriba estilos!
+- Dado que nuestro CSS ahora es JS, podemos exportar, reutilizar e incluso extender nuestros estilos a través de props.
+- Las bibliotecas CSS-in-JS aseguran que no haya conflictos de estilo al generar nombres de clase únicos para tus estilos escritos
+- No es necesario centrarse en las convenciones de nomenclatura de tus clases, ¡simplemente escribe estilos!
 
 **Contras:**
 
-- A diferencia del CSS simple, deberá instalar una o más bibliotecas de JavaScript de terceros, lo que agregará peso a su proyecto construido.
+- A diferencia del CSS simple, deberás instalar una o más bibliotecas de JavaScript de terceros, lo que agregará peso a tu proyecto construido.
 
 ## Conclusión
 
 Ten en cuenta que no incluí bibliotecas de componentes en esta comparación. 
-Quería centrarme principalmente en las diferentes formas de componer estilos tú mismo. 
+Quería centrarme principalmente en las diferentes formas en las que tú mismo puedes componer estilos. 
 
 Ten en cuenta que elegir una biblioteca con componentes y estilos prefabricados como Material UI o Ant Design (por nombrar algunos) 
-es una opción totalmente válida para su proyecto. 
+es una opción totalmente válida para tu proyecto. 
 
-Espero que esta guía le haya dado una buena comprensión de cómo diseñar sus aplicaciones React junto con qué enfoque elegir para su próximo proyecto.
+Espero que esta guía te haya dado una buena comprensión de cómo diseñar tus aplicaciones React junto con qué enfoque elegir para tu próximo proyecto.
