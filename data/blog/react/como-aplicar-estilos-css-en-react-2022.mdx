@@ -11,24 +11,25 @@ authors: ['fabiankaraben']
 
 ![tailwind-nextjs-banner](/../static/images/blog/styles-react.jpg)
 
-Cuando se trata de diseñar tu aplicación React, tenemos un montón de opciones diferentes.
+Cuando se trata de aplicar estilos a una aplicación React, tenemos un montón de opciones diferentes.
 ¿Cuál será la mejor, o la ideal?
 
 He desglosado las 5 formas principales entre las que debes elegir al escribir CSS en tu aplicación React.
 
-No existe una forma general y siempre perfecta de aplicar estilos CSS en React. 
-Cada proyecto es diferente y tiene necesidades diferentes.
+No existe una forma general y siempre perfecta de aplicar estilos CSS en React, cada proyecto es diferente 
+y tiene necesidades diferentes.
+
 Es por eso que al final de cada sección, cubriré los pros y los contras de cada enfoque para ayudarte
-a elegir cuál es el mejorpara usted en sus proyectos. ¡Empecemos!
+a elegir cuál es la mejor para tus proyectos. ¡Empecemos!
 
 ## Estilos en línea
 
 Los estilos en línea son los más directos para diseñar cualquier aplicación React.
 
 Diseñar elementos en línea no requiere crear una hoja de estilo separada. El estilo es aplicado 
-directamente a los elementos en comparación con los estilos en una hoja de estilo también tiene mayor prioridad. 
-Esto significa que "anulan" otras reglas de estilo que pueden aplicarse a un elemento. 
-Aquí está nuestra tarjeta testimonial diseñada con estilos en línea:
+directamente a los elementos. 
+
+Este es un ejemplo de un diseño con estilos en línea:
 
 ```javascript
 export default function App() {
@@ -56,7 +57,7 @@ export default function App() {
       >
         <img
           src="https://randomuser.me/api/portraits/women/48.jpg"
-          alt="Tammy Stevens"
+          alt="Eleonora Henny"
           style={{
             margin: "-90px auto 30px",
             width: "100px",
@@ -74,7 +75,7 @@ export default function App() {
               fontSize: "1.375rem"
             }}
           >
-            This is one of the best developer blogs on the planet! I read it daily to improve my skills.
+            ¡Este es uno de los mejores blogs de desarrolladores del planeta! Lo leo a diario para mejorar mis habilidades.
           </p>
         </div>
         <p
@@ -84,8 +85,8 @@ export default function App() {
             fontSize: "1rem"
           }}
         >
-          Tammy Stevens
-          <span style={{ fontWeight: 400 }}> · Front End Developer</span>
+          Eleonora Henny
+          <span style={{ fontWeight: 400 }}> · Desarrolladores Front End</span>
         </p>
       </div>
     </section>
@@ -97,95 +98,29 @@ A pesar de algunos beneficios rápidos, los estilos en línea son solo una opci�
 
 Las dificultades con los estilos en línea se hacen evidentes a medida que tu base de código crece aunque sea ligeramente.
 
-Como muestra el ejemplo de código anterior, incluso un componente pequeño como este se vuelve muy voluminoso si todos 
+Como muestra el ejemplo del código anterior, incluso un componente pequeño como este se vuelve muy voluminoso si todos 
 los estilos están en línea.
 
-Sin embargo, un truco rápido es colocar estilos en línea en variables reutilizables, que se pueden almacenar en un archivo separado:
-
-```javascript
-const styles = {
-  section: {
-    fontFamily: "-apple-system",
-    fontSize: "1rem",
-    fontWeight: 1.5,
-    lineHeight: 1.5,
-    color: "#292b2c",
-    backgroundColor: "#fff",
-    padding: "0 2em"
-  },
-  wrapper: {
-    textAlign: "center",
-    maxWidth: "950px",
-    margin: "0 auto",
-    border: "1px solid #e6e6e6",
-    padding: "40px 25px",
-    marginTop: "50px"
-  },
-  avatar: {
-    margin: "-90px auto 30px",
-    width: "100px",
-    borderRadius: "50%",
-    objectFit: "cover",
-    marginBottom: "0"
-  },
-  quote: {
-    lineHeight: 1.5,
-    fontWeight: 300,
-    marginBottom: "25px",
-    fontSize: "1.375rem"
-  },
-  name: {
-    marginBottom: "0",
-    fontWeight: 600,
-    fontSize: "1rem"
-  },
-  position: { fontWeight: 400 }
-};
-
-export default function App() {
-  return (
-    <section style={styles.section}>
-      <div style={styles.wrapper}>
-        <img
-          src="https://randomuser.me/api/portraits/women/48.jpg"
-          alt="Tammy Stevens"
-          style={styles.avatar}
-        />
-        <div>
-          <p style={styles.quote}>
-            This is one of the best developer blogs on the planet! I read it
-            daily to improve my skills.
-          </p>
-        </div>
-        <p style={styles.name}>
-          Tammy Stevens
-          <span style={styles.position}> · Front End Developer</span>
-        </p>
-      </div>
-    </section>
-  );
-}
-```
-
-A pesar de esta mejora, los estilos en línea no tienen una serie de características esenciales que cualquier 
+Los estilos en línea carecen de una serie de características esenciales que cualquier 
 hoja de estilo CSS simple podría proporcionar. Por ejemplo, no puede escribir animaciones, 
 estilos para elementos anidados (es decir, todos los elementos secundarios, primer hijo, último hijo), 
-pseudoclases (es decir, :hover) y pseudoelementos (::primera línea) para nombrar un pocos. 
+pseudoclases (es decir, `:hover`) y pseudoelementos (`::first` línea) para nombrar unos pocos. 
 
-Si está creando un prototipo de una aplicación, los estilos en línea son excelentes. 
-Sin embargo, a medida que avance en su creación, deberá cambiar a otra opción de estilo CSS para obtener funciones básicas de CSS.
+Si estás creando un prototipo de una aplicación, los estilos en línea son excelentes. 
+
+Sin embargo, a medida que avances en tu creación, deberás cambiar a otra opción de estilo CSS para obtener funciones básicas de CSS.
 
 **Pros:**
 
 - La forma más rápida de escribir estilos
-- Bueno para la creación de prototipos (escriba estilos en línea y luego muévase a la hoja de estilo)
+- Bueno para la creación de prototipos (escribe estilos en línea y luego cambia a las hojas de estilo)
 - Tiene una gran preferencia (puede anular estilos de una hoja de estilo)
 
 **Contras:**
 
-- Tedioso convertir CSS simple a estilos en línea
+- Tedioso de convertir CSS simple a estilos en línea
 - Muchos estilos en línea hacen que JSX sea ilegible
-- No puede usar funciones básicas de CSS como animaciones, selectores, etc.
+- No puedes usar funciones básicas de CSS como animaciones, selectores, etc.
 - No escala bien
 
 ## CSS plano
@@ -200,7 +135,7 @@ debido a un conjunto cada vez mayor de funciones disponibles en el estándar CSS
 Esto incluye funciones como variables CSS para almacenar valores dinámicos, todo tipo de selectores avanzados 
 para seleccionar elementos secundarios con precisión y nuevas pseudoclases como `:is` y `:where`. 
 
-Aquí está nuestra tarjeta de testimonio escrita en CSS simple e importada en la parte superior de nuestra aplicación React:
+Aquí está nuestro ejemplo escrito en CSS simple e importado en la parte superior de nuestra aplicación React:
 
 ```css
 /* src/styles.css */
@@ -214,11 +149,11 @@ body {
   color: #292b2c;
   background-color: #fff;
 }
-.testimonial {
+.example {
   margin: 0 auto;
   padding: 0 2em;
 }
-.testimonial-wrapper {
+.example-wrapper {
   text-align: center;
   max-width: 950px;
   margin: 0 auto;
@@ -226,25 +161,25 @@ body {
   padding: 40px 25px;
   margin-top: 50px;
 }
-.testimonial-quote p {
+.example-quote p {
   line-height: 1.5;
   font-weight: 300;
   margin-bottom: 25px;
   font-size: 1.375rem;
 }
-.testimonial-avatar {
+.example-avatar {
   margin: -90px auto 30px;
   width: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0;
 }
-.testimonial-name {
+.example-name {
   margin-bottom: 0;
   font-weight: 600;
   font-size: 1rem;
 }
-.testimonial-name span {
+.example-name span {
   font-weight: 400;
 }
 ```
@@ -256,20 +191,20 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <section className="testimonial">
-      <div className="testimonial-wrapper">
+    <section className="example">
+      <div className="example-wrapper">
         <img
-          className="testimonial-avatar"
+          className="example-avatar"
           src="https://randomuser.me/api/portraits/women/48.jpg"
-          alt="Tammy Stevens"
+          alt="Eleonora Henny"
         />
-        <div className="testimonial-quote">
+        <div className="example-quote">
           <p>
-            This is one of the best developer blogs on the planet! I read it daily to improve my skills.
+            ¡Este es uno de los mejores blogs de desarrolladores del planeta! Lo leo a diario para mejorar mis habilidades.
           </p>
         </div>
-        <p className="testimonial-name">
-          Tammy Stevens<span> · Front End Developer</span>
+        <p className="example-name">
+          Eleonora Henny<span> · Front End Developer</span>
         </p>
       </div>
     </section>
@@ -277,25 +212,24 @@ export default function App() {
 }
 ```
 
-Para nuestra tarjeta de testimonios, tenga en cuenta que estamos creando clases para aplicar a cada elemento individual. 
+Para nuestro ejemplo, ten en cuenta que estamos creando clases para aplicar a cada elemento individual. 
 
-Todas estas clases comienzan con el mismo nombre testimonial-. CSS escrito en una hoja de estilo es una excelente primera opción para su aplicación.
+Todas estas clases comienzan con el mismo nombre example-. CSS escrito en una hoja de estilo es una excelente primera opción para tu aplicación.
 
-A diferencia de los estilos en línea, puede diseñar su aplicación prácticamente de cualquier forma que necesite.
+A diferencia de los estilos en línea, puedes diseñar tu aplicación prácticamente de cualquier forma que necesites.
 
-Un problema menor podría ser su convención de nomenclatura. Una vez que tiene una aplicación muy bien desarrollada, 
-se vuelve más difícil pensar en nombres de clase únicos para sus elementos, especialmente cuando tiene 5 divs envueltos uno dentro del otro. 
-Si no tiene una convención de nomenclatura con la que confíe (es decir, BEM), puede ser fácil cometer errores, además de crear varias clases 
+Un problema menor podría ser tu convención de nomenclatura. Una vez que tienes una aplicación muy bien desarrollada, 
+se vuelve más difícil pensar en nombres de clase únicos para tus elementos, especialmente cuando tienes 5 divs envueltos uno dentro del otro. 
+Si no tienes una convención de nomenclatura con la que confíes, puede ser fácil cometer errores, además de crear varias clases 
 con el mismo nombre, lo que genera conflictos. 
 
 Además, escribir CSS normal puede ser más detallado y repetitivo que las herramientas más nuevas como SASS/SCSS. 
-Como resultado, puede llevar un poco más de tiempo escribir sus estilos en CSS en comparación con una herramienta como SCSS o una biblioteca CSS-in-JS. 
+Como resultado, puede llevar un poco más de tiempo escribir tus estilos en CSS en comparación con una herramienta como SCSS o una biblioteca CSS-in-JS. 
 
 Además, es importante tener en cuenta que, dado que CSS se aplica en cascada a todos los elementos secundarios, si aplica una hoja de estilo CSS 
 a un componente, no solo se limita a ese componente. 
 
-Todas sus reglas declaradas se transferirán a cualquier elemento que sea hijo de su componente con estilo. 
-Si tiene confianza con CSS, definitivamente es una opción viable para diseñar cualquier aplicación React. 
+Si tienes confianza con CSS, definitivamente es una opción viable para diseñar cualquier aplicación React. 
 
 Dicho esto, hay una serie de bibliotecas de CSS que nos brindan todo el poder de CSS con menos código e incluyen muchas características adicionales 
 que CSS nunca tendrá por sí solo (como estilos de ámbito y prefijo automático de proveedores).
@@ -307,10 +241,10 @@ que CSS nunca tendrá por sí solo (como estilos de ámbito y prefijo automátic
 
 **Contras:**
 
-- Necesita configurar el prefijo del proveedor para garantizar que las funciones más recientes funcionen para todos los usuarios
+- Necesitas configurar el prefijo del proveedor para garantizar que las funciones más recientes funcionen para todos los usuarios
 - Requiere más escritura y repetitivo que otras bibliotecas CSS (es decir, SASS)
 - Cualquier hoja de estilo se conecta en cascada al componente y a todos los elementos secundarios; sin alcance
-- Debe usar una convención de nomenclatura confiable para garantizar que los estilos no entren en conflicto
+- Debes usar una convención de nomenclatura confiable para garantizar que los estilos no entren en conflicto
 
 ## SASS / SCSS
 
@@ -347,8 +281,7 @@ nav {
 }
 ```
 
-Compare esto con el mismo código escrito en una hoja de estilo SASS:
-
+Compara esto con el mismo código escrito en una hoja de estilo SASS:
 
 ```sass
 /* styles.sass */
@@ -370,15 +303,15 @@ nav
 
 Dado que este no es CSS normal, debe compilarse de SASS a CSS simple. 
 
-Para hacerlo en nuestros proyectos React, puede usar una biblioteca como node-sass. 
+Para hacerlo en nuestros proyectos React, puedes usar una biblioteca como *node-sass*. 
 
-Si está utilizando un proyecto Create React App, para comenzar a usar archivos .scss y .sass, puede instalar node-sass con npm:
+Si estás utilizando un proyecto *Create React App*, para comenzar a usar archivos *.scss* y *.sass*, puedes instalar *node-sass* con *npm*:
 
 ```
 npm install node-sass
 ```
 
-Aquí está nuestra tarjeta testimonial diseñada con SCSS:
+Aquí está nuestro ejemplo diseñado con SCSS:
 
 ```sass
 /* src/styles.scss */
@@ -401,9 +334,9 @@ body {
   background-color: #fff;
 }
 
-/* unchanged rules skipped */
+/* reglas sin cambios */
 
-.testimonial-name {
+.example-name {
   @extend %font-basic;
   margin-bottom: 0;
   font-weight: 600;
@@ -416,19 +349,19 @@ body {
 
 Estos estilos nos dan las siguientes características: variables, estilos extensibles y estilos anidados.
 
-**Variables**: puede usar valores dinámicos escribiendo variables, al igual que en JavaScript, declarándolas con un `$` al principio.
+**Variables**: puedes usar valores dinámicos escribiendo variables, al igual que en JavaScript, declarándolas con un `$` al principio.
 
 Hay dos variables que se pueden usar en varias reglas: `$font-stack`, `$text-color`. 
 
-**Extensión/herencia**: puede agregar reglas de estilo al extenderlas. 
-Para ampliar las reglas, crea su propio selector que se puede reutilizar como una variable. 
-El nombre de las reglas que desea extender comienza con `%`. 
+**Extensión/herencia**: puedes agregar reglas de estilo al extenderlas. 
+Para ampliar las reglas, crea tu propio selector que se puede reutilizar como una variable. 
+El nombre de las reglas que deseas extender comienza con `%`. 
 
-La variable `%font-basic` es heredada por las reglas del `body` y `.testimonial-name`. 
+La variable `%font-basic` es heredada por las reglas del `body` y `.example-name`. 
 
-**Anidamiento**: en lugar de escribir varias reglas que comienzan con el mismo selector, puede anidarlas. 
+**Anidamiento**: en lugar de escribir varias reglas que comienzan con el mismo selector, puedes anidarlas. 
 
-En `.testimonial-name` , usamos un selector anidado para apuntar al elemento de intervalo dentro de él.
+En `.example-name` , usamos un selector anidado para apuntar al elemento de intervalo dentro de él.
 
 **Pros:**
 
@@ -439,7 +372,7 @@ En `.testimonial-name` , usamos un selector anidado para apuntar al elemento de 
 
 - Al igual que el CSS simple, los estilos son globales y no se limitan a ningún componente.
 - Las hojas de estilo CSS están comenzando a incluir una serie de características que SASS tenía exclusivamente, como las variables CSS (no necesariamente una estafa, pero vale la pena señalar)
-- SASS / SCSS a menudo requiere configuración, como instalar la biblioteca Node `node-sass`
+- SASS/SCSS a menudo requiere configuración, como instalar la biblioteca Node `node-sass`
 
 ## Módulos CSS
 
@@ -465,7 +398,7 @@ body {
 
 /* styles skipped */
 
-.testimonial-name span {
+.example-name span {
   font-weight: 400;
 }
 ```
@@ -475,21 +408,21 @@ import styles from './styles.module.css';
 
 export default function App() {
   return (
-    <section className={styles.testimonial}>
-      <div className={styles['testimonial-wrapper']}>
+    <section className={styles.example}>
+      <div className={styles['example-wrapper']}>
         <img
           src="https://randomuser.me/api/portraits/women/48.jpg"
-          alt="Tammy Stevens"
-          className={styles['testimonial-avatar']}
+          alt="Eleonora Henny"
+          className={styles['example-avatar']}
         />
         <div>
-          <p className={styles['testimonial-quote']}>
+          <p className={styles['example-quote']}>
             This is one of the best developer blogs on the planet! I read it
             daily to improve my skills.
           </p>
         </div>
-        <p className={styles['testimonial-name']}>
-          Tammy Stevens
+        <p className={styles['example-name']}>
+          Eleonora Henny
           <span> · Front End Developer</span>
         </p>
       </div>
@@ -511,8 +444,8 @@ cuando se construye nuestro proyecto.
 Nuestros elementos HTML generados se verán así:
 
 ```html
-<p class="_styles__testimonial-name_309571057">
-  Tammy Stevens
+<p class="_styles__example-name_309571057">
+  Eleonora Henny
 </p>
 ```
 
