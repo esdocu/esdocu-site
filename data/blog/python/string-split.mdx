@@ -1,0 +1,118 @@
+---
+title: 'Python split() - Ejemplo de división de cadenas'
+date: '2022-06-19'
+lastmod: '2022-06-19'
+tags: ['python', 'split']
+draft: false
+summary: 'El método split() en Python divide los caracteres de una cadena en elementos separados en una lista.'
+images: ['/static/images/blog/styles-react.jpg']
+authors: ['fabiankaraben']
+---
+
+![tailwind-nextjs-banner](/../static/images/blog/styles-react.jpg)
+
+El método `split()` en Python divide los caracteres de una cadena en elementos separados en una lista. 
+
+En este tutorial, repasaremos algunos ejemplos para ayudarte a aprender a usar el método `split()`. 
+
+Comenzaremos desde la sintaxis y luego veremos cómo podemos modificar la lista devuelta usando los parámetros del método `split()`.
+
+## Sintaxis del método split() en Python
+
+El método `split()` toma dos parámetros. Así es como se ve la sintaxis:
+
+```python
+str.split(separator, maxsplit)
+```
+
+Los parámetros anteriores son `separator` y `maxsplit`. Ambos parámetros son opcionales, pero analicemos lo que hacen. 
+
+`separator` especifica el carácter en el que se produce la división. Si no se especifica, los espacios en blanco 
+se utilizarán como el carácter predeterminado donde se produce la división. Comprenderás esto mejor en los 
+ejemplos de las próximas secciones. 
+
+`maxsplit` especifica el número máximo de divisiones. El valor predeterminado es `-1`, lo que permite un número 
+continuo de divisiones. Este argumento también es opcional.
+
+## Cómo usar el método split() sin parámetros
+
+En esta sección, veremos algunos ejemplos de división de cadenas usando el método `split()` sin pasar ningún parámetro.
+
+```python
+myString = "Python es un lenguaje de programación"
+
+print(myString.split())
+
+# ['Python', 'es', 'un', 'lenguaje', 'de', 'programación']
+```
+
+En el código anterior, creamos una cadena llamada `myString` con cinco caracteres que componen 
+la cadena: "Python es un lenguaje de programación". 
+
+Luego usamos el método `split()` en nuestra cadena usando la notación de puntos. 
+
+Cuando se imprimía en la consola, cada carácter de la cadena se convertía en un elemento separado en un 
+tipo de datos de lista: `['Python', 'es', 'un', 'lenguaje', 'de', 'programación']`. 
+
+El método `split()` puede separar cada palabra porque, de forma predeterminada, los espacios en blanco 
+indican el punto de división de cada carácter (consulta el parámetro `separator` en la sección anterior).
+
+## Cómo usar el método split() con parámetros
+
+En esta sección, entenderemos cómo usar los parámetros del método `split()` con ejemplos.
+
+```python
+myString = "Hello World!, if you're reading this, you're awesome"
+
+print(myString.split(", "))
+
+# ['Hello World!', "if you're reading this", "you're awesome"]
+```
+
+En el ejemplo anterior, pasamos una coma (`,`) como separador: `myString.split(", ")`. 
+
+Entonces, en lugar de dividir los caracteres después de cada espacio en blanco, los caracteres solo se dividirán 
+cuando aparezca una coma: `['Hello World!', "if you're reading this", "you're awesome"]`. Esto significa que los caracteres 
+que aparecen antes de una coma se agruparán. 
+
+En el siguiente ejemplo, trabajaremos con el segundo parámetro: `maxsplit`.
+
+```python
+myString = "Hello World!, if you're reading this, you're awesome"
+
+print(myString.split(", ", 0))
+
+# ["Hello World!, if you're reading this, you're awesome"]
+```
+
+Hemos agregado un valor `maxsplit` de `0` en el código anterior. Esto controla cómo se divide la cadena. `0` implica `1`, 
+por lo que los caracteres se devuelven como un elemento en una lista: `["Hello World!, if you're reading this, you're awesome"]`
+
+Cambiemos el número y veamos qué pasa.
+
+```python
+myString = "Hello World!, if you're reading this, you're awesome"
+
+print(myString.split(", ", 1))
+
+# ['Hello World!', "if you're reading this, you're awesome"]
+```
+
+Ahora que hemos cambiado el número a `1`, los personajes se dividen en dos elementos en la lista: `'Hello World!'` 
+y `"if you're reading this, you're awesome"`. 
+
+Si se omite el valor `maxsplit`, se establecerá en `-1` de forma predeterminada. Este valor negativo permite que los 
+métodos `split()` dividan cada carácter continuamente en elementos separados hasta que no queden más caracteres. 
+
+Si hay un `separator` específico, la división se realizará con respecto a ese valor; de lo contrario, 
+se utilizarán espacios en blanco.
+
+## Conclusión
+
+En este artículo, hablamos sobre el método `split()` en Python que divide los caracteres en una cadena y los devuelve 
+como elementos en una lista. 
+
+Vimos la sintaxis del método `split()` y los dos parámetros proporcionados por defecto: los parámetros `separator` y `maxsplit`. 
+
+También vimos algunos ejemplos divididos en dos secciones. La primera sección mostró cómo usar el método `split()` sin parámetros, 
+mientras que la segunda mostró cómo usaríamos los parámetros del método para lograr diferentes resultados.
