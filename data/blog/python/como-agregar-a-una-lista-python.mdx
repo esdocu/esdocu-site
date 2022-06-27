@@ -1,0 +1,159 @@
+---
+title: 'Python List insert() - Cómo agregar a una lista en Python'
+date: '2022-06-17'
+lastmod: '2022-06-17'
+tags: ['python', 'list']
+draft: false
+summary: 'En este artículo, veremos cómo crear una lista en Python. También veremos cómo agregar elementos a una lista.'
+images: ['/static/images/blog/como-agregar-a-una-lista-python.jpg']
+authors: ['fabiankaraben']
+---
+
+![tailwind-nextjs-banner](/../static/images/blog/como-agregar-a-una-lista-python.jpg)
+
+El tipo de datos de lista es una de las estructuras de datos integradas en Python junto con conjuntos, tuplas y diccionarios. 
+Utiliza una lista para organizar, agrupar y almacenar datos. 
+
+Pero cada una de estas estructuras de datos tiene características distintivas que las diferencian entre sí. 
+
+En este artículo, veremos cómo crear una lista en Python. 
+También veremos cómo agregar elementos a una lista usando los métodos `insert()`, `append()` y `extend()`.
+
+## Cómo crear una lista en Python
+
+Para crear una lista en Python, usamos corchetes. Aquí hay un ejemplo:
+
+```python
+myList = ['one', 'two', 'three']
+
+print(myList)
+
+# ['one', 'two', 'three']
+```
+
+En el código anterior, creamos una lista llamada `myList` con tres elementos: "one", "two" y "three". 
+Como puedes ver arriba, los elementos están entre corchetes.
+
+## ¿Cómo se agrega un elemento a una lista en Python?
+
+Hay tres métodos que podemos usar al agregar un elemento a una lista en Python. 
+Ellos son: `insert()`, `append()` y `extend()`. Los dividiremos en subsecciones separadas.
+
+### Cómo agregar un elemento a una lista usando el método insert()
+
+Puedes usar el método `insert()` para insertar un elemento en una lista en un índice específico. 
+Cada elemento de una lista tiene un índice. El primer elemento tiene un índice de cero (0), 
+el segundo tiene un índice de uno (1), y así sucesivamente. 
+
+Aquí hay un ejemplo usando el método insert():
+
+```python
+myList = ['one', 'two', 'three']
+
+myList.insert(0, 'zero')
+
+print(myList)
+
+# ['zero', 'one', 'two', 'three']
+```
+
+En el ejemplo anterior, creamos una lista con tres elementos: `['zero', 'one', 'two', 'three']`. 
+Luego usamos el método `insert()` para insertar un nuevo elemento: "zero" en el índice 0 (el primer índice): 
+`myList.insert (0, 'zero')`. 
+
+El método `insert()` toma dos parámetros: el índice del nuevo elemento que se insertará y el valor del elemento.
+
+### Cómo agregar un elemento a una lista usando el método append()
+
+A diferencia del método `insert()` que nos permite especificar dónde insertar un elemento, 
+el método `append()` agrega el elemento al final de la lista. 
+
+El valor del nuevo elemento se pasa como un parámetro en el método `append()`. 
+
+Aquí hay un ejemplo:
+
+```python
+myList = ['one', 'two', 'three']
+
+myList.append('four')
+
+print(myList)
+
+# ['one', 'two', 'three', 'four']
+```
+
+El nuevo elemento se pasó como parámetro en el código anterior: `myList.append('four')`. 
+Cuando se imprime en la consola, tenemos el elemento en el último índice de la lista.
+
+### Cómo agregar un elemento a una lista usando el método extend()
+
+Puedes usar el método `extend()` para agregar una colección de datos a una lista. 
+Estoy usando "data collection" aquí porque también podemos agregar sets, tuplas, etc. a una lista. 
+
+Veamos algunos ejemplos.
+
+### Cómo agregar una lista a una lista usando el método extend()
+
+```python
+myList1 = ['one', 'two', 'three']
+myList2 = ['four', 'five', 'six']
+```
+
+En el código anterior, creamos dos listas: `myList1` y `myList2`. A continuación, añadiremos los elementos de 
+la segunda lista a la primera. Así es cómo:
+
+```python
+myList1.extend(myList2)
+```
+
+Entonces, cuando imprimamos `myList1`, tendremos esto: `['one', 'two', 'three', 'four', 'five', 'six']`. 
+
+Aquí está todo junto:
+
+```python
+myList1 = ['one', 'two', 'three']
+myList2 = ['four', 'five', 'six']
+
+myList1.extend(myList2)
+
+print(myList1)
+# ['one', 'two', 'three', 'four', 'five', 'six']
+```
+
+### Cómo agregar una tupla a una lista usando el método extend()
+
+El proceso aquí es el mismo que el del último ejemplo, excepto que estamos agregando una tupla. 
+Creas una tupla usando paréntesis. 
+
+Eso es:
+
+```python
+myTuple = ('Hello', 'Hi')
+```
+
+Agreguemos una tupla a una lista usando el método `extend()`.
+
+```python
+myList1 = ['one', 'two', 'three']
+myList2 = ('four', 'five', 'six')
+
+myList1.extend(myList2)
+
+print(myList1)
+
+# ['one', 'two', 'three', 'four', 'five', 'six']
+```
+
+Obtenemos el mismo resultado que en la última sección.
+
+## Conclusión
+
+En este artículo, hablamos sobre las listas en Python. 
+
+Vimos cómo crear una lista y los diversos métodos para agregar elementos a una lista. 
+
+Agregamos elementos a nuestra lista usando los métodos `insert()`, `append()` y `extend()`. 
+
+El método `insert()` inserta un elemento nuevo en un índice específico, el método `append()` agrega 
+un elemento nuevo en el último índice de una lista, mientras que el método `extend()` agrega una nueva 
+recopilación de datos a una lista.

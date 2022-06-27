@@ -66,7 +66,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                   <article className="space-y-2">
                     <Link href={`/blog/${slug}`}>
                       <Image
-                        src={images[0]}
+                        src={`/../..${images[0]}`}
                         alt="Post image"
                         className="object-cover object-center md:h-36 lg:h-48"
                         width={1024}
