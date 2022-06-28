@@ -29,7 +29,12 @@ export default function App({ Component, pageProps }: AppProps) {
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>
-      <CookieConsent debug={false} buttonText="Lo entiendo">
+      <CookieConsent
+        debug={false}
+        buttonText="Lo entiendo"
+        enableDeclineButton
+        declineButtonText="Lo rechazo"
+      >
         Este sitio web utiliza cookies para mejorar la experiencia del usuario.
       </CookieConsent>
     </ThemeProvider>
