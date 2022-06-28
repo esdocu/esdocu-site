@@ -131,50 +131,51 @@ export default function Pdc() {
         </div>
         <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
           <p>
-            Cookies técnicas: Son aquellas que permiten al usuario la navegación a través de una
-            página web, plataforma o aplicación y la utilización de las diferentes opciones o
-            servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación
-            de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los
-            elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar
-            la solicitud de inscripción o participación en un evento, utilizar elementos de
-            seguridad durante la navegación, almacenar contenidos para la difusión de videos o
-            sonido o compartir contenidos a través de redes sociales.
+            <strong>Cookies técnicas</strong>: Son aquellas que permiten al usuario la navegación a
+            través de una página web, plataforma o aplicación y la utilización de las diferentes
+            opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la
+            comunicación de datos, identificar la sesión, acceder a partes de acceso restringido,
+            recordar los elementos que integran un pedido, realizar el proceso de compra de un
+            pedido, realizar la solicitud de inscripción o participación en un evento, utilizar
+            elementos de seguridad durante la navegación, almacenar contenidos para la difusión de
+            videos o sonido o compartir contenidos a través de redes sociales.
           </p>
           <p>
-            Cookies de personalización: Son aquellas que permiten al usuario acceder al servicio con
-            algunas características de carácter general predefinidas en función de una serie de
-            criterios en el terminal del usuario como por ejemplo serian el idioma, el tipo de
-            navegador a través del cual accede al servicio, la configuración regional desde donde
-            accede al servicio, etc.
+            <strong>Cookies de personalización</strong>: Son aquellas que permiten al usuario
+            acceder al servicio con algunas características de carácter general predefinidas en
+            función de una serie de criterios en el terminal del usuario como por ejemplo serian el
+            idioma, el tipo de navegador a través del cual accede al servicio, la configuración
+            regional desde donde accede al servicio, etc.
           </p>
           <p>
-            Cookies de análisis: Son aquellas que bien tratadas por nosotros o por terceros, nos
-            permiten cuantificar el número de usuarios y así realizar la medición y análisis
-            estadístico de la utilización que hacen los usuarios del servicio ofertado. Para ello se
-            analiza tu navegación en nuestra página web con el fin de mejorar la oferta de productos
-            o servicios que le ofrecemos.
+            <strong>Cookies de análisis</strong>: Son aquellas que bien tratadas por nosotros o por
+            terceros, nos permiten cuantificar el número de usuarios y así realizar la medición y
+            análisis estadístico de la utilización que hacen los usuarios del servicio ofertado.
+            Para ello se analiza tu navegación en nuestra página web con el fin de mejorar la oferta
+            de productos o servicios que le ofrecemos.
           </p>
           <p>
-            Cookies publicitarias: Son aquellas que, bien tratadas por nosotros o por terceros, nos
-            permiten gestionar de la forma más eficaz posible la oferta de los espacios
-            publicitarios que hay en la página web, adecuando el contenido del anuncio al contenido
-            del servicio solicitado o al uso que realice de nuestra página web. Para ello podemos
-            analizar tus hábitos de navegación en Internet y podemos mostrarte publicidad
+            <strong>Cookies publicitarias</strong>: Son aquellas que, bien tratadas por nosotros o
+            por terceros, nos permiten gestionar de la forma más eficaz posible la oferta de los
+            espacios publicitarios que hay en la página web, adecuando el contenido del anuncio al
+            contenido del servicio solicitado o al uso que realice de nuestra página web. Para ello
+            podemos analizar tus hábitos de navegación en Internet y podemos mostrarte publicidad
             relacionada con tu perfil de navegación.
           </p>
           <p>
-            Cookies de publicidad comportamental: Son aquellas que permiten la gestión, de la forma
-            más eficaz posible, de los espacios publicitarios que, en su caso, el editor haya
-            incluido en una página web, aplicación o plataforma desde la que presta el servicio
-            solicitado. Estas cookies almacenan información del comportamiento de los usuarios
-            obtenida a través de la observación continuada de sus hábitos de navegación, lo que
-            permite desarrollar un perfil específico para mostrar publicidad en función del mismo.
+            <strong>Cookies de publicidad comportamental</strong>: Son aquellas que permiten la
+            gestión, de la forma más eficaz posible, de los espacios publicitarios que, en su caso,
+            el editor haya incluido en una página web, aplicación o plataforma desde la que presta
+            el servicio solicitado. Estas cookies almacenan información del comportamiento de los
+            usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo
+            que permite desarrollar un perfil específico para mostrar publicidad en función del
+            mismo.
           </p>
           <p>
-            Cookies de terceros: Esta web https://esdocu.com puede utilizar servicios de terceros
-            que, por cuenta de Google, recopilarán información con fines estadísticos, de uso del
-            sitio por parte del usuario y para la prestación de otros servicios relacionados con la
-            actividad del sitio web y otros servicios de Internet.
+            <strong>Cookies de terceros</strong>: Esta web https://esdocu.com puede utilizar
+            servicios de terceros que, por cuenta de Google, recopilarán información con fines
+            estadísticos, de uso del sitio por parte del usuario y para la prestación de otros
+            servicios relacionados con la actividad del sitio web y otros servicios de Internet.
           </p>
           <p>
             En particular, este sitio web utiliza Google Analytics, un servicio analítico de web

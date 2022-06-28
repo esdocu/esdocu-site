@@ -41,21 +41,22 @@ export default function Al() {
             y la transparencia que, como usuario te corresponden, a la hora de utilizar esta web.
           </p>
           <p>
-            El RGPD (Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de
-            2016 relativo a la protección de las personas físicas) que es la nueva normativa de la
-            Unión Europea que unifica la regulación del tratamiento de los datos personales en los
-            distintos países de la UE.
+            El <strong>RGPD</strong> (Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo
+            de 27 de abril de 2016 relativo a la protección de las personas físicas) que es la nueva
+            normativa de la Unión Europea que unifica la regulación del tratamiento de los datos
+            personales en los distintos países de la UE.
           </p>
           <p>
-            La LOPD (Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter
-            Personal y Real Decreto 1720/2007, de 21 de diciembre, el Reglamento de desarrollo de la
-            LOPD) que regula el tratamiento de los datos personales y las obligaciones que debemos
-            asumir los responsables de una web o un blog a la hora de gestionar esta información.
+            La <strong>LOPD</strong> (Ley Orgánica 15/1999, de 13 de diciembre, de Protección de
+            Datos de Carácter Personal y Real Decreto 1720/2007, de 21 de diciembre, el Reglamento
+            de desarrollo de la LOPD) que regula el tratamiento de los datos personales y las
+            obligaciones que debemos asumir los responsables de una web o un blog a la hora de
+            gestionar esta información.
           </p>
           <p>
-            La LSSI (Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y
-            Comercio Electrónico) que regula las transacciones económicas mediante medios
-            electrónicos, como es el caso de este blog.
+            La <strong>LSSI</strong> (Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
+            Información y Comercio Electrónico) que regula las transacciones económicas mediante
+            medios electrónicos, como es el caso de este blog.
           </p>
         </div>
       </div>
@@ -68,11 +69,8 @@ export default function Al() {
         <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
           <p>El responsable y titular de este sitio web es ESDOCU</p>
           <p>
-            Los datos que nos facilites con tu consentimiento, y de acuerdo al uso establecido en
-            nuestra Política de Privacidad, serán incorporados a un fichero automatizado debidamente
-            inscrito en la Agencia Española de Protección de Datos, en el que el responsable de
-            dicho fichero es: ESDOCU. Esto quiere decir que tus datos están seguros, de acuerdo a lo
-            que establece la ley.
+            Los datos que nos facilites con tu consentimiento están seguros, de acuerdo a lo que
+            establece la ley.
           </p>
         </div>
       </div>
@@ -238,26 +236,6 @@ export default function Al() {
           <p>
             Para acceder a la información completa sobre el uso de cookies en este sitio web, su
             finalidad y su desestimación, puedes consultar nuestra POLÍTICA DE COOKIES.
-          </p>
-        </div>
-      </div>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="mt-7 pt-4 pb-6 md:space-y-5">
-          <h2 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
-            LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE
-          </h2>
-        </div>
-        <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
-          <p>El presente Aviso Legal se encuentra sometido a la legislación española vigente.</p>
-          <p>
-            En caso necesario, ante cualquier tipo de controversia de carácter legal, ESDOCU y el
-            usuario, con renuncia expresa a cualquier otro fuero, se someterán a los Juzgados y
-            Tribunales del domicilio del Usuario para cualquier controversia que pudiera derivarse.
-          </p>
-          <p>
-            En el caso de que el usuario tenga su domicilio fuera de España, ESDOCU y el usuario se
-            someterán, con renuncia expresa a cualquier otro fuero, a los juzgados y tribunales de
-            Barcelona (España).
           </p>
           <p>
             Si tienes cualquier duda sobre este Aviso Legal, puedes enviarnos un correo electrónico

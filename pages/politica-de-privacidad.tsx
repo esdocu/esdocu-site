@@ -4,7 +4,7 @@ export default function Pdp() {
   return (
     <>
       <PageSEO
-        title={`Políticas de Privacidad`}
+        title={`Política de Privacidad`}
         description={`Esdocu es un proyecto de traducción al español de documentación de tecnologías open
             source`}
         noIndex={true}
@@ -41,21 +41,22 @@ export default function Pdp() {
           </p>
           <p>Concretamente, esta web se ajusta al cumplimiento de las siguientes normativas:</p>
           <p>
-            El RGPD (Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de
-            2016 relativo a la protección de las personas físicas) que es la nueva normativa de la
-            Unión Europea que unifica la regulación del tratamiento de los datos personales en los
-            distintos países de la UE.
+            El <strong>RGPD</strong> (Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo
+            de 27 de abril de 2016 relativo a la protección de las personas físicas) que es la nueva
+            normativa de la Unión Europea que unifica la regulación del tratamiento de los datos
+            personales en los distintos países de la UE.
           </p>
           <p>
-            La LOPD (Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter
-            Personal y Real Decreto 1720/2007, de 21 de diciembre, el Reglamento de desarrollo de la
-            LOPD) que regula el tratamiento de los datos personales y las obligaciones que debemos
-            asumir los responsables de una web o un blog a la hora de gestionar esta información.
+            La <strong>LOPD</strong> (Ley Orgánica 15/1999, de 13 de diciembre, de Protección de
+            Datos de Carácter Personal y Real Decreto 1720/2007, de 21 de diciembre, el Reglamento
+            de desarrollo de la LOPD) que regula el tratamiento de los datos personales y las
+            obligaciones que debemos asumir los responsables de una web o un blog a la hora de
+            gestionar esta información.
           </p>
           <p>
-            La LSSI (Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y
-            Comercio Electrónico) que regula las transacciones económicas mediante medios
-            electrónicos, como es el caso de este blog.
+            La <strong>LSSI</strong> (Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
+            Información y Comercio Electrónico) que regula las transacciones económicas mediante
+            medios electrónicos, como es el caso de este blog.
           </p>
         </div>
       </div>
@@ -68,11 +69,8 @@ export default function Pdp() {
         <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
           <p>El responsable y titular de este sitio web es ESDOCU</p>
           <p>
-            Los datos que nos facilites con tu consentimiento, y de acuerdo al uso establecido en
-            nuestra Política de Privacidad, serán incorporados a un fichero automatizado debidamente
-            inscrito en la Agencia Española de Protección de Datos, en el que el responsable de
-            dicho fichero es: ESDOCU. Esto quiere decir que tus datos están seguros, de acuerdo a lo
-            que establece la ley.
+            Los datos que nos facilites con tu consentimiento están seguros, de acuerdo a lo que
+            establece la ley.
           </p>
         </div>
       </div>
@@ -232,12 +230,6 @@ export default function Pdp() {
             datos de carácter personal.
           </p>
           <p>
-            Este sitio web está alojado en https://sered.net/, con marca comercial Sered Hosting
-            Profesional, que proporciona los servicios de hosting para que puedas acceder y navegar
-            por nuestro sitio. Puedes consultar la política de privacidad y demás aspectos legales
-            de esta empresa en el siguiente enlace: https://sered.net/politica-de-privacidad.
-          </p>
-          <p>
             Nuestra web utiliza servidores publicitarios con el fin de facilitar los contenidos
             comerciales que visualizas en nuestras páginas. Dichos servidores publicitarios utilizan
             cookies que le permiten adaptar los contenidos publicitarios a los perfiles demográficos
@@ -285,8 +277,15 @@ export default function Pdp() {
             fines indicados.{' '}
           </p>
           <p>
-            Para más información, puedes consultar la política de privacidad de Google en
-            https://www.google.com/intl/es/policies/privacy/.
+            Para más información, puedes consultar la{' '}
+            <a
+              href="https://www.google.com/intl/es/policies/privacy/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              política de privacidad de Google
+            </a>
+            .
           </p>
         </div>
       </div>
@@ -300,8 +299,15 @@ export default function Pdp() {
           <p>
             Google, como proveedor asociado, utiliza cookies para publicar anuncios en este sitio
             web. Puedes inhabilitar el uso de la cookie de DART a través del anuncio de Google y
-            accediendo a la política de privacidad de la red de contenido:
-            https://www.google.com/intl/es/policies/privacy/.
+            accediendo a la{' '}
+            <a
+              href="https://www.google.com/intl/es/policies/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              política de privacidad de la red de contenido
+            </a>
+            .
           </p>
           <p>
             Google utiliza empresas publicitarias asociadas para publicar anuncios cuando visita
