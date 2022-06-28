@@ -14,6 +14,13 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size={6} />
         </div>
+        <div className="mb-4 text-sm text-gray-500 dark:text-gray-400">
+          <Link href="/politica-de-cookies">Políticas de Cookies</Link>
+          <span className="mx-2">|</span>
+          <Link href="/politica-de-privacidad">Políticas de Privacidad</Link>
+          <span className="mx-2">|</span>
+          <Link href="/aviso-legal">Aviso Legal</Link>
+        </div>
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>

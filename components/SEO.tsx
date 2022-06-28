@@ -15,6 +15,7 @@ interface CommonSEOProps {
       }[]
   twImage: string
   canonicalUrl?: string
+  noIndex: boolean
 }
 
 const CommonSEO = ({
@@ -24,12 +25,13 @@ const CommonSEO = ({
   ogImage,
   twImage,
   canonicalUrl,
+  noIndex,
 }: CommonSEOProps) => {
   const router = useRouter()
   return (
     <Head>
       <title>{title}</title>
-      <meta name="robots" content="follow, index" />
+      <meta name="robots" content={noIndex ? 'follow, noindex' : 'follow, index'} />
       <meta name="description" content={description} />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
       <meta property="og:type" content={ogType} />
@@ -57,9 +59,10 @@ const CommonSEO = ({
 interface PageSEOProps {
   title: string
   description: string
+  noIndex?: boolean
 }
 
-export const PageSEO = ({ title, description }: PageSEOProps) => {
+export const PageSEO = ({ title, description, noIndex = false }: PageSEOProps) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   return (
@@ -69,11 +72,12 @@ export const PageSEO = ({ title, description }: PageSEOProps) => {
       ogType="website"
       ogImage={ogImageUrl}
       twImage={twImageUrl}
+      noIndex={noIndex}
     />
   )
 }
 
-export const TagSEO = ({ title, description }: PageSEOProps) => {
+export const TagSEO = ({ title, description, noIndex = false }: PageSEOProps) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const router = useRouter()
@@ -85,6 +89,7 @@ export const TagSEO = ({ title, description }: PageSEOProps) => {
         ogType="website"
         ogImage={ogImageUrl}
         twImage={twImageUrl}
+        noIndex={noIndex}
       />
       <Head>
         <link
@@ -178,6 +183,7 @@ export const BlogSEO = ({
         ogImage={featuredImages}
         twImage={twImageUrl}
         canonicalUrl={canonicalUrl}
+        noIndex={false}
       />
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}
