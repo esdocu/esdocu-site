@@ -16,7 +16,7 @@ export default function Projects() {
             Proyectos
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Documentaciones traducidas completamente al español
+            Documentaciones traducidas completamente al español y otras en proceso de traducción
           </p>
         </div>
         <div className="container py-12">
@@ -28,6 +28,7 @@ export default function Projects() {
                 description={d.description}
                 imgSrc={d.imgSrc}
                 href={d.href}
+                done={d.done}
               />
             ))}
           </div>

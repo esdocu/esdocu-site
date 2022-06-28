@@ -1,7 +1,7 @@
 import Image from './Image'
 import Link from './Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
+const Card = ({ title, description, imgSrc, href, done }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
       className={`${
@@ -45,7 +45,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             className="text-base font-medium leading-6 text-primary-600 hover:text-primary-700 dark:text-primary-500 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
-            Abrir web del proyecto &rarr;
+            {done ? 'Abrir web del proyecto' : 'Abrir el repositorio GitHub'} &rarr;
           </Link>
         )}
       </div>

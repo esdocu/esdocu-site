@@ -34,7 +34,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             {siteMetadata.description}
           </p>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Estos son nuestros proyectos de traducción finalizados:
+            Estos son nuestros proyectos de traducción finalizados y en proceso:
           </p>
           <div className="container py-12">
             <div className="-m-4 flex flex-wrap">
@@ -45,6 +45,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   description={d.description}
                   imgSrc={d.imgSrc}
                   href={d.href}
+                  done={d.done}
                 />
               ))}
             </div>
