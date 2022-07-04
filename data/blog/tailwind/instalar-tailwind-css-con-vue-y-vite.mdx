@@ -1,0 +1,95 @@
+---
+title: 'Instalar Tailwind CSS con Vue 3 y Vite'
+date: '2022-07-01'
+lastmod: '2022-07-01'
+tags: ['tailwind css', 'vue', 'vite']
+draft: false
+summary: 'En este artículo veremos cómo configurar Tailwind CSS en un proyecto de Vue 3 y Vite.'
+images: ['/static/images/blog/instalar-tailwind-css-con-vue-y-vite.jpg']
+authors: ['fabiankaraben']
+---
+
+![tailwind-nextjs-banner](/../static/images/blog/instalar-tailwind-css-con-vue-y-vite.jpg)
+
+Configuración de Tailwind CSS en un proyecto de Vue 3 y Vite.
+
+## 1- Crea tu proyecto
+
+Comienza creando un nuevo proyecto de Vite si aún no tienes uno configurado. 
+El enfoque más común es usar [Create Vite](https://github.com/vitejs/vite/tree/main/packages/create-vite#readme).
+
+```
+npm init vite my-project
+cd my-project
+```
+
+## 2- Instalar Tailwind CSS
+
+Instala `tailwindcss` y sus dependencias de pares a través de `npm` y luego ejecuta el comando `init` para generar 
+tanto `tailwind.config.js` como `postcss.config.js`.
+
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+## 3- Configura tus rutas de plantilla
+
+Agrega las rutas a todos tus archivos de plantilla en tu archivo `tailwind.config.js`:
+
+```javascript
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+## 4- Agregue las directivas de Tailwind a tu CSS
+
+Crea un archivo `./src/index.css` y agrega las directivas `@tailwind` para cada una de las capas de Tailwind:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+## 5- Importar el archivo CSS
+
+Importa el archivo `./src/index.css` recién creado en tu archivo `./src/main.js`:
+
+```javascript
+import { createApp } from 'vue'
+import App from './App.vue'
+import './index.css'
+
+createApp(App).mount('#app')
+```
+
+## 6- Comienza tu proceso build
+
+Ejecuta tu proceso de compilación con `npm run dev`:
+
+```
+npm run dev
+```
+
+## 7- Comienza a usar Tailwind en tu proyecto
+
+Comienza a usar las clases de utilidad de Tailwind para diseñar tu contenido:
+
+Veamos un ejemplo en el archivo `App.vue`:
+
+```vue
+<template>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</template>
+```
