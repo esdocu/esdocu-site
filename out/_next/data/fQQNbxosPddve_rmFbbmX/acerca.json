@@ -1,0 +1,31 @@
+{
+  "pageProps": {
+    "author": {
+      "name": "Fabián Karaben",
+      "avatar": "/static/images/fab-avatar.png",
+      "occupation": "Traductor y creador de contenido",
+      "company": "Esdocu",
+      "email": "hola.esdocu@gmail.com",
+      "twitter": "https://twitter.com/fab_k_dev",
+      "linkedin": "https://www.linkedin.com/in/fabiankaraben/",
+      "github": "https://github.com/fabiankaraben",
+      "body": {
+        "raw": "\nHola, soy Fabián y actualmente me dedico a la traducción y creación de contenido para el proyecto Esdocu.\n\nEn mis tiempos libres siempre estoy aprendiendo nuevos lenguajes de programación y nuevas tecnologías relacionadas al desarrollo de software.",
+        "code": "var Component=(()=>{var m=Object.create;var c=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,b=Object.prototype.hasOwnProperty;var g=(e,a)=>()=>(a||e((a={exports:{}}).exports,a),a.exports),f=(e,a)=>{for(var n in a)c(e,n,{get:a[n],enumerable:!0})},i=(e,a,n,o)=>{if(a&&typeof a==\"object\"||typeof a==\"function\")for(let r of p(a))!b.call(e,r)&&r!==n&&c(e,r,{get:()=>a[r],enumerable:!(o=l(a,r))||o.enumerable});return e};var h=(e,a,n)=>(n=e!=null?m(u(e)):{},i(a||!e||!e.__esModule?c(n,\"default\",{value:e,enumerable:!0}):n,e)),x=e=>i(c({},\"__esModule\",{value:!0}),e);var d=g((v,s)=>{s.exports=_jsx_runtime});var w={};f(w,{default:()=>j,frontmatter:()=>y});var t=h(d()),y={name:\"Fabi\\xE1n Karaben\",avatar:\"/static/images/fab-avatar.png\",occupation:\"Traductor y creador de contenido\",company:\"Esdocu\",email:\"hola.esdocu@gmail.com\",twitter:\"https://twitter.com/fab_k_dev\",linkedin:\"https://www.linkedin.com/in/fabiankaraben/\",github:\"https://github.com/fabiankaraben\"};function _(e={}){let{wrapper:a}=e.components||{};return a?(0,t.jsx)(a,Object.assign({},e,{children:(0,t.jsx)(n,{})})):n();function n(){let o=Object.assign({p:\"p\"},e.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(o.p,{children:\"Hola, soy Fabi\\xE1n y actualmente me dedico a la traducci\\xF3n y creaci\\xF3n de contenido para el proyecto Esdocu.\"}),(0,t.jsx)(o.p,{children:\"En mis tiempos libres siempre estoy aprendiendo nuevos lenguajes de programaci\\xF3n y nuevas tecnolog\\xEDas relacionadas al desarrollo de software.\"})]})}}var j=_;return x(w);})();\n;return Component;"
+      },
+      "_id": "authors/default.mdx",
+      "_raw": {
+        "sourceFilePath": "authors/default.mdx",
+        "sourceFileName": "default.mdx",
+        "sourceFileDir": "authors",
+        "contentType": "mdx",
+        "flattenedPath": "authors/default"
+      },
+      "type": "Authors",
+      "readingTime": { "text": "1 min read", "minutes": 0.185, "time": 11100, "words": 37 },
+      "slug": "default",
+      "toc": []
+    }
+  },
+  "__N_SSG": true
+}
