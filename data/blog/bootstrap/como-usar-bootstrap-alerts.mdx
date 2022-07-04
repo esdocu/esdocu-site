@@ -1,0 +1,94 @@
+---
+title: 'Cómo usar Bootstrap Alerts'
+date: '2022-06-30'
+lastmod: '2022-06-30'
+tags: ['bootstrap']
+draft: false
+summary: 'En este artículo vemos cómo utilizar el componente Alert de Bootstrap.'
+images: ['/static/images/blog/como-usar-bootstrap-alerts.jpg']
+authors: ['fabiankaraben']
+---
+
+![tailwind-nextjs-banner](/../static/images/blog/como-usar-bootstrap-alerts.jpg)
+
+Los *Alert* proporcionan mensajes de retroalimentación contextuales para las acciones típicas de los usuarios.
+
+## Ejemplo básico
+
+Las alertas están disponibles para cualquier longitud de texto, así como un botón de cierre opcional. 
+Para un estilo adecuado, usa una de las ocho clases contextuales obligatorias (por ejemplo, .alert-success). 
+Para el botón de cierre en línea, usa el [complemento JavaScript de alertas](https://getbootstrap.esdocu.com/docs/5.1/components/alerts/#dismissing).
+
+```html
+<div class="alert alert-primary" role="alert">
+  Una simple alerta primary: ¡échale un vistazo!
+</div>
+<div class="alert alert-secondary" role="alert">
+  Una simple alerta secondary: ¡échale un vistazo!
+</div>
+<div class="alert alert-success" role="alert">
+  Una simple alerta success: ¡échale un vistazo!
+</div>
+<div class="alert alert-danger" role="alert">
+  Una simple alerta danger: ¡échale un vistazo!
+</div>
+<div class="alert alert-warning" role="alert">
+  Una simple alerta warning: ¡échale un vistazo!
+</div>
+<div class="alert alert-info" role="alert">
+  Una simple alerta info: ¡échale un vistazo!
+</div>
+<div class="alert alert-light" role="alert">
+  Una simple alerta light: ¡échale un vistazo!
+</div>
+<div class="alert alert-dark" role="alert">
+  Una simple alerta dark: ¡échale un vistazo!
+</div>
+```
+
+El resultado será:
+
+![tailwind-nextjs-banner](/../static/images/blog/bootstrap-alerts.png)
+
+## Alerts con enlaces
+
+Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlaces de colores coincidentes dentro de cualquier alerta.
+
+Por ejemplo:
+
+```html
+<div class="alert alert-primary" role="alert">
+  Una simple alerta primary con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-secondary" role="alert">
+  Una simple alerta secondary con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-success" role="alert">
+  Una simple alerta success con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-danger" role="alert">
+  Una simple alerta danger con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-warning" role="alert">
+  Una simple alerta warning con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-info" role="alert">
+  Una simple alerta info con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-light" role="alert">
+  Una simple alerta light con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+<div class="alert alert-dark" role="alert">
+  Una simple alerta dark con <a href="#" class="alert-link">un enlace de ejemplo</a>. Dale un clic si quieres.
+</div>
+```
+
+Generará:
+
+![tailwind-nextjs-banner](/../static/images/blog/bootstrap-alerts-colores.png)
+
+## Documentación completa
+
+Puedes ver la documentación completa del Bootstrap Alert en Español utilizando el siguiente enlace:
+
+[Bootstrap Alerts en Español](https://getbootstrap.esdocu.com/docs/5.1/components/alerts/)
