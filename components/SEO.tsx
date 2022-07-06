@@ -16,6 +16,7 @@ interface CommonSEOProps {
   twImage: string
   canonicalUrl?: string
   noIndex: boolean
+  includeAdsense: boolean
 }
 
 const CommonSEO = ({
@@ -26,6 +27,7 @@ const CommonSEO = ({
   twImage,
   canonicalUrl,
   noIndex,
+  includeAdsense,
 }: CommonSEOProps) => {
   const router = useRouter()
   return (
@@ -52,6 +54,13 @@ const CommonSEO = ({
         rel="canonical"
         href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`}
       />
+      {includeAdsense && (
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5376430835440290"
+          crossOrigin="anonymous"
+        ></script>
+      )}
     </Head>
   )
 }
@@ -60,9 +69,15 @@ interface PageSEOProps {
   title: string
   description: string
   noIndex?: boolean
+  includeAdsense?: boolean
 }
 
-export const PageSEO = ({ title, description, noIndex = false }: PageSEOProps) => {
+export const PageSEO = ({
+  title,
+  description,
+  noIndex = false,
+  includeAdsense = false,
+}: PageSEOProps) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   return (
@@ -73,11 +88,17 @@ export const PageSEO = ({ title, description, noIndex = false }: PageSEOProps) =
       ogImage={ogImageUrl}
       twImage={twImageUrl}
       noIndex={noIndex}
+      includeAdsense={includeAdsense}
     />
   )
 }
 
-export const TagSEO = ({ title, description, noIndex = false }: PageSEOProps) => {
+export const TagSEO = ({
+  title,
+  description,
+  noIndex = false,
+  includeAdsense = false,
+}: PageSEOProps) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const router = useRouter()
@@ -90,6 +111,7 @@ export const TagSEO = ({ title, description, noIndex = false }: PageSEOProps) =>
         ogImage={ogImageUrl}
         twImage={twImageUrl}
         noIndex={noIndex}
+        includeAdsense={includeAdsense}
       />
       <Head>
         <link
@@ -184,6 +206,7 @@ export const BlogSEO = ({
         twImage={twImageUrl}
         canonicalUrl={canonicalUrl}
         noIndex={false}
+        includeAdsense={true}
       />
       <Head>
         {date && <meta property="article:published_time" content={publishedAt} />}
