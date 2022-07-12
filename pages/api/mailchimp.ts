@@ -11,9 +11,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { email } = req.body
 
   if (!email) {
-    return res
-      .status(400)
-      .json({ error: 'El correo electrónico es requerido 2 ' + process.env.MAILCHIMP_API_SERVER })
+    return res.status(400).json({ error: 'El correo electrónico es requerido' })
   }
 
   try {
