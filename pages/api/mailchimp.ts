@@ -2,19 +2,10 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import mailchimp from '@mailchimp/mailchimp_marketing'
 import Cors from 'cors'
 
-// const whitelist = ['http://localhost:3000', 'https://getbootstrap.esdocu.com']
-
 // Initializing the cors middleware
+// You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
 const cors = Cors({
-  methods: ['GET', 'POST'],
-  // origin: function (origin, callback) {
-  //   console.log(origin)
-  //   if (whitelist.indexOf(origin) !== -1) {
-  //     callback(null, true)
-  //   } else {
-  //     callback(new Error('Not allowed by CORS'))
-  //   }
-  // },
+  methods: ['POST', 'GET', 'HEAD'],
 })
 
 // Helper method to wait for a middleware to execute before continuing
@@ -44,7 +35,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { email } = req.body
 
   if (!email) {
-    return res.status(400).json({ error: 'El correo electrónico es requerido 3' })
+    return res.status(400).json({ error: 'El correo electrónico es requerido 4' })
   }
 
   try {
