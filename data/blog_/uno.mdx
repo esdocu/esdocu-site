@@ -1,0 +1,125 @@
+---
+title: 'Introducción a JavaScript'
+date: '2022-07-01'
+lastmod: '2022-07-01'
+tags: ['javascript']
+draft: false
+summary: '.'
+images: ['/static/images/blog/default.jpg']
+authors: ['fabiankaraben']
+---
+
+![tailwind-nextjs-banner](/../static/images/blog/default.jpg)
+
+Hola y bienvenidos al primero de 10 capítulos del curso de HTML.
+
+Comencemos a aprender HTML.
+
+## ¿Qué es HTML?
+
+HTML es un acrónimo que signica *Lenguaje de Marcado de Hipertexto* (HyperText Markup Language).
+
+HTML es el bloque de construcción más básico de la web, define el significado y la estructura del
+contenido. Y hipertexto, se refiere a los enlaces que conectan las páginas web entre sí, y que
+pueden estar dentro del mismo sitio web, o enlaces de un sitio web a otro.
+
+En general usarás HTML para mostra textos, imágenes y otros contenidos en un navegador web.
+
+## Herramientas que vamos a usar
+
+Pero antes de empezar a crear una página web usando elemenos HTML, necesitamos obtener las herramientas
+correctas. 
+
+### Navegador web
+
+Entonces vamos a iniciar por el navegador web, si no tienes uno o si tienes curiosidad sobre
+qué navegador usaré en esta serie, estaré usando el navegador Google Chrome, el cual puedes descargarlo
+desde el siguiente enlace:
+
+[Descargar Google Chrome](https://www.google.com/intl/es/chrome/)
+
+También estaré usando una extensión de Google Chrome, así que el primer paso es ingresar a:
+
+[Chrome web store](https://chrome.google.com/webstore/category/extensions?hl=es)
+
+y una vez allí, buscar la extensión "Dark new tab" ofrecida por "Keller", o simplemente puedes llegar
+ahí con el siguiente enlace:
+
+[Dark new tab](https://chrome.google.com/webstore/detail/dark-new-tab/kcphhkbdlfggickaoeiahdcfhagfbajl?hl=es)
+
+hacemos clic en "Añadir a Chrome".
+
+Finalizada la instalación ya estamos listos para abrir con esta extensión, una pestaña en modo oscuro en lugar
+del modo claro.
+
+### Editor de código
+
+Ahora necesitamos obtener un editor de código y el más utilizado en estos tiempos y el que yo prefiero usar 
+es Visual Studio Code.
+
+Tú puedes utilizar el editor de código que prefieras para escribir código HTML, pero si ingresas a:
+
+[code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+podrás descargar Visual Studio Code gratis para el sistema operativo que estés utilizando.
+
+## Comenzando con Visual Studio Code
+
+Asumiendo que ya tienes instalado Visual Studio Code, ábrelo y puede que veas una pantalla vacía o una pantalla de bienvenida.
+
+Si prefieres ver la interfaz en español puedes hacer clic en el icono de *Extensiones* en la barra de actividades a tu derecha,
+escribir la palabra `spanish` e instalar la extensión *Spanish Language Pack for Visual Studio Code* de *Microsoft*.
+Se te mostrará un mensaje con el botón *Change Language and Restart*, presiónalo y luego del reinicio ya verás todo en español.
+
+Ahora lo que tienes que hacer es crear una carpeta en tu computadora, y pondremos los archivos dentro de esa carpeta.
+Así que si voy al menú *Archivo* y selecciono *Abrir Carpeta* puedo seleccionar la carpeta creada previamente para
+trabajar con ella directamente dentro de Visual Studio Code.
+
+Luego de seleccionar y abrir la carpeta estamos listos para crear nuestro primer archivo HTML.
+
+## Nuestro primer archivo HTML
+
+A tu izquierda verás el árbol de archivos el cual actualmente está vacío, y si hacemos clic en el botón *Nuevo archivo* e ingresamos
+un nombre de archivo, en este caso `index.html`, ahora vemos el nuevo archivo en el árbol de archivos y estamos listos para 
+comenzar a editar su contenido.
+
+El nombre `index.html` se utiliza para indicar el primer archivo que se muestra por defecto al ingresar a un sitio web.
+
+Intentaremos utilizar siempre nombres de archivos en minúsculas y sin espacios, ya que el nombre del archivo normalmente se utiliza
+al construir la URL de las diferentes páginas de un sitio web. Normalmente se utiliza guiones medios (`-`) para separar las palabras,
+aunque también es posible utilizar guiones bajos (`_`).
+
+Muy bien, ahora tenemos un archivo HTML vacío. Creemos nuestro primer elemento HTML, el cual será justamente el 
+elemento `<html></html>`.
+
+Algunas veces se utiliza de forma indistinta los términos *etiqueta HTML* y *elemento HTML*, pero en realidad un *elemento HTML*
+hace referencia al par de etiquetas, la etiqueta de apertura (`<html>`) y la etiqueta de cierre (`</html>`). 
+
+Toda página HTML inicia con la etiqueta `<html>` y finaliza con la etiqueta de cierre `</html>`. Es decir que todo el contenido
+se coloca entre estas dos etiquetas.
+
+El siguiente paso es crear las dos áreas principales de toda página HTML. La primera área contiene datos que no se ven en la página
+pero que se consideran meta datos sobre la página, estamos hablando del área `<head></head>`.
+
+Solo tipea `head` y presiona la tecla *TAB* y ahora tenemos nuestro elemento `head` y posteriormente vamos a colocar meta datos 
+acerca de la página dentro de esta área.
+
+La siguiente área es la parte de la página que todos ven en el navegador, y que se encuentra dentro del elemento `body`.
+Así que escribe `body` y presiona *TAB*, y ahora tenemos nuestra dos principales secciones de nuestra página y ambas dentro
+de nuestro elemento `html`, tenemos una sección `head` y una sección `body`.
+
+## Contenido en `head`
+
+Dentro de nuestro elemento `head` solo vamos a colocar una pieza de meta datos hoy, y realmente no comenzará con la palabra *meta*,
+regresaremos a eso en el futuro.
+
+Vamos a crear el elemento `title` para darle un título a nuestra página, el cual será "Mi primer sitio web".
+
+Es bueno ir guardando los cambios realizados presionando las teclas *CTRL+S*, por ejemplo este es un buen momento para guardar los
+cambios.
+
+Al guardar los cambios Visual Studio Code puede formatear automáticamente el código para que se vea correctamente posicionado, por
+ejemplo las tabulaciones al inicio de cada línea.
+
+Si quieres activar esta funcionalidad de formateo automático, puedes hacer clic en el icono de *Extensiones* en la barra de actividades 
+a tu derecha, escribir la palabra `prettier`

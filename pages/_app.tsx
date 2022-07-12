@@ -15,6 +15,12 @@ import LayoutWrapper from '@/components/LayoutWrapper'
 import CookieConsent from 'react-cookie-consent'
 
 export default function App({ Component, pageProps }: AppProps) {
+  const noLayout = pageProps.noLayout
+
+  if (noLayout) {
+    return <Component {...pageProps} />
+  }
+
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>

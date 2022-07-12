@@ -131,7 +131,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         </div>
       )}
       {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
+        <div className="flex items-center justify-center pt-8">
           <NewsletterForm />
         </div>
       )}

@@ -19,6 +19,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        msm: '430px',
+      },
       spacing: {
         '9/16': '56.25%',
       },
