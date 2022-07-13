@@ -14,14 +14,14 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   await NextCors(req, res, {
     // Options
     methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-    origin: '*',
+    origin: 'https://getbootstrapp.esdocu.com',
     optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
   })
 
   const { email } = req.body
 
   if (!email) {
-    return res.status(400).json({ error: 'El correo electrónico es requerido 4' })
+    return res.status(400).json({ error: 'El correo electrónico es requerido 5' })
   }
 
   try {
