@@ -64,11 +64,19 @@ module.exports = withContentlayer(
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
+    poweredByHeader: false,
+    generateEtags: false,
+    httpAgentOptions: {
+      keepAlive: false,
+    },
     async headers() {
       return [
         {
           source: '/(.*)',
-          // headers: securityHeaders,
+          headers: securityHeaders,
+        },
+        {
+          source: '/api/mailchimp',
           headers: [
             { key: 'Access-Control-Allow-Credentials', value: 'true' },
             { key: 'Access-Control-Allow-Origin', value: '*' },
