@@ -66,10 +66,10 @@ module.exports = withContentlayer(
     },
     async headers() {
       return [
-        {
-          source: '/(.*)',
-          headers: securityHeaders,
-        },
+        // {
+        //   source: '/(.*)',
+        //   headers: securityHeaders,
+        // },
         {
           // matching all API routes
           source: '/api/:path*',
