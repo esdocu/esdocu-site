@@ -21,7 +21,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { email } = req.body
 
   if (!email) {
-    return res.status(400).json({ error: 'El correo electrónico es requerido' })
+    return res.status(400).json({ error: 'El correo electrónico es requerido 1' })
   }
 
   try {
