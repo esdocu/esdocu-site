@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 
-import siteMetadata from '@/data/siteMetadata'
+// import siteMetadata from '@/data/siteMetadata'
 
 const NewsletterForm = ({ title = 'Esdocu DEV News' }) => {
   const inputEl = useRef<HTMLInputElement>(null)
@@ -11,7 +11,8 @@ const NewsletterForm = ({ title = 'Esdocu DEV News' }) => {
   const subscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    const res = await fetch(`/api/${siteMetadata.newsletter.provider}`, {
+    // const res = await fetch(`/api/${siteMetadata.newsletter.provider}`, {
+    const res = await fetch(`https://esdocu-newsletters.xeodev.workers.dev`, {
       body: JSON.stringify({
         email: inputEl.current.value,
       }),
