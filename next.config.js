@@ -74,6 +74,11 @@ module.exports = withContentlayer(
           // matching all API routes
           source: '/api/:path*',
           headers: [
+            // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+            {
+              key: 'Referrer-Policy',
+              value: 'unsafe-url',
+            },
             { key: 'Access-Control-Allow-Credentials', value: 'true' },
             { key: 'Access-Control-Allow-Origin', value: '*' },
             { key: 'Access-Control-Allow-Methods', value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT' },
