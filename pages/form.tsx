@@ -10,11 +10,9 @@ export default function Form() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} noIndex={true} />
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+      <div className="w-full px-2">
+        <NewsletterForm />
+      </div>
     </>
   )
 }

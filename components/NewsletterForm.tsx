@@ -36,12 +36,12 @@ const NewsletterForm = ({ title = 'Esdocu DEV News' }) => {
   }
 
   return (
-    <div className="max-w-md px-3">
-      <div className="pb-1 text-xl font-semibold uppercase text-gray-800 dark:text-gray-100">
-        {title}
+    <div className="mx-auto max-w-md rounded-xl border border-purple-600 py-5 px-4">
+      <div className="pb-1 text-xl font-semibold uppercase text-purple-600 dark:text-gray-100">
+        {`👋 ${title} 🗞`}
       </div>
       <div className="pb-4 text-base text-gray-800 dark:text-gray-100">
-        Entérate de todas las novedades del mundo DEV en un solo correo semanal.
+        Entérate de todas las novedades del mundo DEV en un solo correo semanal. 🙌
       </div>
       <form className="flex flex-col msm:flex-row" onSubmit={subscribe}>
         <div className="w-full">
@@ -60,7 +60,7 @@ const NewsletterForm = ({ title = 'Esdocu DEV News' }) => {
             disabled={subscribed}
           />
         </div>
-        <div className="mt-2 flex w-full rounded-md shadow-sm msm:mt-0 msm:ml-3">
+        <div className="mt-2 flex w-full rounded-md shadow-sm msm:mt-0 msm:ml-2">
           <button
             className={`w-full rounded-md bg-primary-500 py-2 px-4 font-medium text-white sm:py-0 ${
               subscribed ? 'cursor-default' : 'hover:bg-primary-700 dark:hover:bg-primary-400'
@@ -68,7 +68,7 @@ const NewsletterForm = ({ title = 'Esdocu DEV News' }) => {
             type="submit"
             disabled={subscribed}
           >
-            {subscribed ? '¡Gracias!' : 'Suscribirme'}
+            {subscribed ? '¡Gracias!' : 'UNIRME'}
           </button>
         </div>
       </form>
