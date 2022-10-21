@@ -13,13 +13,13 @@ const projectsData = [
   //   href: 'https://github.com/esdocu/tailwindcss',
   //   done: false,
   // },
-  {
-    title: 'Dart en Español',
-    description: `Dart es un lenguaje optimizado para el cliente para aplicaciones rápidas en cualquier plataforma.`,
-    imgSrc: '/static/images/projects/dart.jpg',
-    href: 'https://dart.esdocu.com',
-    done: true,
-  },
+  // {
+  //   title: 'Dart en Español',
+  //   description: `Dart es un lenguaje optimizado para el cliente para aplicaciones rápidas en cualquier plataforma.`,
+  //   imgSrc: '/static/images/projects/dart.jpg',
+  //   href: 'https://dart.esdocu.com',
+  //   done: true,
+  // },
   // {
   //   title: 'Flutter en Español',
   //   description: `Flutter transforma el proceso de desarrollo de aplicaciones. Crea, prueba e implementa hermosas aplicaciones móviles, web, de escritorio e integradas desde una única base de código.`,
