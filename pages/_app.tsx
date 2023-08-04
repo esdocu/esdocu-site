@@ -12,7 +12,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 
-import CookieConsent from 'react-cookie-consent'
+// import CookieConsent from 'react-cookie-consent'
 
 export default function App({ Component, pageProps }: AppProps) {
   const noLayout = pageProps.noLayout
@@ -30,14 +30,14 @@ export default function App({ Component, pageProps }: AppProps) {
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>
-      <CookieConsent
+      {/* <CookieConsent
         debug={false}
         buttonText="Lo entiendo"
         enableDeclineButton
         declineButtonText="Lo rechazo"
       >
         Este sitio web utiliza cookies para mejorar la experiencia del usuario.
-      </CookieConsent>
+      </CookieConsent> */}
     </ThemeProvider>
   )
 }
