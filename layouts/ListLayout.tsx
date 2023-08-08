@@ -27,7 +27,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
@@ -57,12 +57,16 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </div>
         </div>
         <div>
-          <ul className="mx-auto flex flex-wrap divide-y divide-gray-200 dark:divide-gray-700">
+          <ul className="mx-auto flex flex-wrap">
             {!filteredBlogPosts.length && 'No se han encontrado publicaciones.'}
             {displayPosts.map((post) => {
               const { slug, date, title, summary, tags, images } = post
               return (
-                <li key={slug} className="mx-3 py-12" style={{ maxWidth: '488px' }}>
+                <li
+                  key={slug}
+                  className="md border-t border-gray-200 px-4 py-8 dark:border-gray-700 md:w-1/2"
+                  style={{ maxWidth: '544px' }}
+                >
                   <article className="space-y-2">
                     <Link href={`/blog/${slug}`}>
                       <Image

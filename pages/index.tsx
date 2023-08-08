@@ -25,7 +25,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div>
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-14">
             ¿Qué es Esdocu?
@@ -51,7 +51,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             </div>
           </div>
         </div>
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+        <div className="space-y-2 border-t border-gray-200 pt-6  pb-8 dark:border-gray-700 md:space-y-5">
           <h2 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-14">
             Nuestro Blog
           </h2>
@@ -65,7 +65,11 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             {posts.slice(0, MAX_DISPLAY).map((post) => {
               const { slug, date, title, summary, tags, images } = post
               return (
-                <li key={slug} className="mx-3 py-12" style={{ maxWidth: '488px' }}>
+                <li
+                  key={slug}
+                  className="md border-t border-gray-200 px-4 py-8 dark:border-gray-700 md:w-1/2"
+                  style={{ maxWidth: '544px' }}
+                >
                   <article>
                     <div className="space-y-2">
                       <Link href={`/blog/${slug}`}>
