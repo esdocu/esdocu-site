@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="mt-16 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4">
+        <div className="mb-4 flex space-x-4">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
           <SocialIcon kind="github" href={siteMetadata.github} size={6} />
           <SocialIcon kind="facebook" href={siteMetadata.facebook} size={6} />
@@ -15,22 +15,34 @@ export default function Footer() {
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size={6} />
         </div>
         <div className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="/politica-de-cookies">Políticas de Cookies</Link>
+          <Link className="inline sm:hidden" href="/politica-de-cookies">
+            Cookies
+          </Link>
+          <Link className="hidden sm:inline" href="/politica-de-cookies">
+            Políticas de Cookies
+          </Link>
           <span className="mx-2">|</span>
-          <Link href="/politica-de-privacidad">Políticas de Privacidad</Link>
+          <Link className="inline sm:hidden" href="/politica-de-privacidad">
+            Privacidad
+          </Link>
+          <Link className="hidden sm:inline" href="/politica-de-privacidad">
+            Políticas de Privacidad
+          </Link>
           <span className="mx-2">|</span>
-          <Link href="/aviso-legal">Aviso Legal</Link>
+          <Link className="inline sm:hidden" href="/aviso-legal">
+            Legal
+          </Link>
+          <Link className="hidden sm:inline" href="/aviso-legal">
+            Aviso Legal
+          </Link>
         </div>
-        <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
+        <div className="mb-8 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
-          <div>{` • `}</div>
-          <Link href="/">{siteMetadata.title}</Link>
-        </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            Tailwind Nextjs Theme
+          <div className="hidden sm:block">{` • `}</div>
+          <Link href="/" className="hidden sm:block">
+            {siteMetadata.title}
           </Link>
         </div>
       </div>
