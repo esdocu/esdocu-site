@@ -57,12 +57,12 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           </div>
         </div>
         <div>
-          <ul className="mx-auto max-w-4xl divide-y divide-gray-200 dark:divide-gray-700">
+          <ul className="mx-auto flex flex-wrap divide-y divide-gray-200 dark:divide-gray-700">
             {!filteredBlogPosts.length && 'No se han encontrado publicaciones.'}
             {displayPosts.map((post) => {
               const { slug, date, title, summary, tags, images } = post
               return (
-                <li key={slug} className="py-12">
+                <li key={slug} className="mx-3 py-12" style={{ maxWidth: '488px' }}>
                   <article className="space-y-2">
                     <Link href={`/blog/${slug}`}>
                       <Image

@@ -11,7 +11,7 @@ import { allBlogs } from 'contentlayer/generated'
 import Card from '@/components/Card'
 import projectsData from '@/data/projectsData'
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 4
 
 export const getStaticProps = async () => {
   // TODO: move computation to get only the essential frontmatter to contentlayer.config
@@ -60,12 +60,12 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </p>
         </div>
         <div>
-          <ul className="mx-auto max-w-4xl divide-y divide-gray-200 dark:divide-gray-700">
+          <ul className="mx-auto flex flex-wrap divide-y divide-gray-200 dark:divide-gray-700">
             {!posts.length && 'No se han encontrado publicaciones.'}
             {posts.slice(0, MAX_DISPLAY).map((post) => {
               const { slug, date, title, summary, tags, images } = post
               return (
-                <li key={slug} className="py-12">
+                <li key={slug} className="mx-3 py-12" style={{ maxWidth: '488px' }}>
                   <article>
                     <div className="space-y-2">
                       <Link href={`/blog/${slug}`}>
