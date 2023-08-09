@@ -25,10 +25,10 @@ export default function Pdc() {
         <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
           <p>
             Si quieres saber más sobre el uso de cookies que realiza este sitio web
-            https://esdocu.com, estás en el lugar indicado. A continuación, vamos a explicarte qué
-            son exactamente las cookies; qué tipo de cookies utilizamos y para qué; y cómo puedes
-            ejercer tu derecho para configurar tu navegador y desestimar el uso de cualquiera de
-            ellas.
+            https://nosotros.esdocu.com, estás en el lugar indicado. A continuación, vamos a
+            explicarte qué son exactamente las cookies; qué tipo de cookies utilizamos y para qué; y
+            cómo puedes ejercer tu derecho para configurar tu navegador y desestimar el uso de
+            cualquiera de ellas.
           </p>
           <p>
             Eso sí, debes saber, que si decides no utilizar algunas cookies, este sitio web puede no
@@ -118,8 +118,8 @@ export default function Pdc() {
           <p>
             Para poder ofrecerte una mejor experiencia de usuario, obtener datos analíticos,
             almacenar y recuperar información sobre tus hábitos de navegación o de tu equipo y
-            desarrollar su actividad, este sitio web https://esdocu.com, utiliza cookies propias y
-            de terceros.
+            desarrollar su actividad, este sitio web https://nosotros.esdocu.com, utiliza cookies
+            propias y de terceros.
           </p>
         </div>
       </div>
@@ -172,9 +172,9 @@ export default function Pdc() {
             mismo.
           </p>
           <p>
-            <strong>Cookies de terceros</strong>: Esta web https://esdocu.com puede utilizar
-            servicios de terceros que, por cuenta de Google, recopilarán información con fines
-            estadísticos, de uso del sitio por parte del usuario y para la prestación de otros
+            <strong>Cookies de terceros</strong>: Esta web https://nosotros.esdocu.com puede
+            utilizar servicios de terceros que, por cuenta de Google, recopilarán información con
+            fines estadísticos, de uso del sitio por parte del usuario y para la prestación de otros
             servicios relacionados con la actividad del sitio web y otros servicios de Internet.
           </p>
           <p>

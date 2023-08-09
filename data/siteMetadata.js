@@ -6,7 +6,7 @@ const siteMetadata = {
     'Esdocu es un proyecto de traducción al Español de documentaciones de tecnologías Open Source.',
   language: 'es-es',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://esdocu.com',
+  siteUrl: 'https://nosotros.esdocu.com',
   siteRepo: 'https://github.com/esdocu/esdocu-site',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
