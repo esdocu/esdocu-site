@@ -30,10 +30,10 @@ export default function Al() {
             normas de uso que regulan el uso de esta web.
           </p>
           <p>
-            En el momento en que accedas a este sitio web https://nosotros.esdocu.com, asumes la
-            condición de usuario, por lo que el contenido de este Aviso Legal te afecta
-            directamente. Por eso, es importante que lo leas para disipar cualquier duda que puedas
-            tener y tener conocimiento de causa sobre las condiciones que estás aceptando.{' '}
+            En el momento en que accedas a este sitio web https://esdocu.com, asumes la condición de
+            usuario, por lo que el contenido de este Aviso Legal te afecta directamente. Por eso, es
+            importante que lo leas para disipar cualquier duda que puedas tener y tener conocimiento
+            de causa sobre las condiciones que estás aceptando.{' '}
           </p>
           <p>
             Para empezar, debes saber que este sitio web cumple con las normativas vigentes en

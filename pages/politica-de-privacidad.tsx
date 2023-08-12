@@ -25,8 +25,8 @@ export default function Pdp() {
         <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
           <p>
             Si estás aquí es porque quieres saber más sobre las obligaciones y derechos que te
-            corresponden como usuario de esta web https://nosotros.esdocu.com y eso está muy bien.
-            Nuestro deber es informarte y el tuyo estar debidamente informado.
+            corresponden como usuario de esta web https://esdocu.com y eso está muy bien. Nuestro
+            deber es informarte y el tuyo estar debidamente informado.
           </p>
           <p>
             En esta Política de Privacidad te informaremos con total transparencia sobre la
