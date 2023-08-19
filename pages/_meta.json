@@ -1,0 +1,63 @@
+{
+  "index": {
+    "title": "Inicio",
+    "type": "page",
+    "display": "hidden"
+  },
+  "courses": {
+    "title": "Cursos",
+    "type": "menu",
+    "items": {
+      "javascript-m": {
+        "title": "JavaScript",
+        "href": "/javascript"
+      },
+      "python-m": {
+        "title": "Python",
+        "href": "/python"
+      }
+    }
+  },
+  "translations": {
+    "title": "Traducciones",
+    "type": "menu",
+    "items": {
+      "javascript-m": {
+        "title": "Bootstrap",
+        "href": "https://getbootstrap.esdocu.com",
+        "newWindow": true
+      }
+    }
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "type": "page",
+    "display": "hidden"
+  },
+  "python": {
+    "title": "Python",
+    "type": "page",
+    "display": "hidden"
+  },
+  "contact": {
+    "title": "Contacto ↗",
+    "type": "page",
+    "href": "mailto:hola.esdocu@gmail.com",
+    "newWindow": true
+  },
+  "aviso-legal": {
+    "title": "Aviso legal",
+    "type": "page",
+    "display": "hidden"
+  },
+  "politica-de-cookies": {
+    "title": "Políticas de Cookies",
+    "type": "page",
+    "display": "hidden"
+  },
+  "politica-de-privacidad": {
+    "title": "Política de Privacidad",
+    "type": "page",
+    "display": "hidden"
+  }
+}
