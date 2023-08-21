@@ -1,7 +1,7 @@
 {
   "index": "Introducción",
   "-- Más": {
-    "type": "separator",
-    "title": "Más"
+    "title": "Más",
+    "type": "separator"
   }
 }

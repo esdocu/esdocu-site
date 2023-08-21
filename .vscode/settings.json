@@ -8,4 +8,16 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true,
     },
+    "cSpell.language": "en,es-ES",
+    "cSpell.enabledLanguageIds": [
+        "mdx"
+    ],
+    "cSpell.checkLimit": 5000,
+    "cSpell.words": [
+        "Esdocu",
+        "monitorea",
+        "Rossum",
+        "Ámsterdam"
+    ],
+    "cSpell.ignoreWords": [],
 }
