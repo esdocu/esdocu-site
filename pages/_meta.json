@@ -4,7 +4,7 @@
     "type": "page",
     "display": "hidden"
   },
-  "courses": {
+  "cursos": {
     "title": "Cursos",
     "type": "menu",
     "items": {
@@ -18,7 +18,7 @@
       }
     }
   },
-  "translations": {
+  "traducciones": {
     "title": "Traducciones",
     "type": "menu",
     "items": {
@@ -39,7 +39,7 @@
     "type": "page",
     "display": "hidden"
   },
-  "contact": {
+  "contacto": {
     "title": "Contacto ↗",
     "type": "page",
     "href": "mailto:hola.esdocu@gmail.com",

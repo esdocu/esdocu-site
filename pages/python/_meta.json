@@ -1,7 +1,9 @@
 {
-  "-- Introduccion": {
-    "title": "Introducción",
+  "index": "¿Qué es Python?",
+  "instalar-python": "Instalación de Python",
+  "-- Parte 1": {
+    "title": "Parte 1: ",
     "type": "separator"
   },
-  "index": "¿Qué es Python?"
+  "iniciando": "Iniciando con Python"
 }

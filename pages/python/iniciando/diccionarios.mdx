@@ -1,0 +1,33 @@
+# Diccionarios
+
+El quinto y último tipo de datos que queremos presentar en este punto es el diccionario. Un diccionario almacena asignaciones de claves a valores. Para crear un diccionario, los pares clave-valor se escriben entre corchetes separados por comas. Hay dos puntos entre una clave y el valor correspondiente:
+
+```
+>>> d = {"key1": "value1", "key2": "value2"}
+```
+
+Puedes acceder a un valor subyacente a través de una clave. Para este propósito, los corchetes se utilizan como en las listas:
+
+```
+>>> d["key1"]
+'value1'
+>>> d["key2"]
+'value2'
+```
+
+También puedes usar esta operación de acceso para modificar valores o ingresar nuevos pares clave-valor en el diccionario:
+
+```
+>>> d["key2"] = "value2.1"
+>>> d["key2"]
+'value2.1'
+>>> d["key3"] = "value3"
+>>> d["key3"]
+'value3'
+>>> d
+{'key1': 'value1', 'key2': 'value2.1', 'key3': 'value3'}
+```
+
+Tanto las claves como los valores pueden tener diferentes tipos de datos en lugar de los strings utilizados en este punto. Volveremos sobre eso a su debido tiempo.
+
+Basaremos nuestras descripciones posteriores en la presentación básica de los cinco tipos de datos presentados en las secciones anteriores (entero, flotante, cadena, lista y diccionario) hasta que lleguemos a siguientes capítulos, donde entraremos en mayor detalle, sobre todos los tipos de datos integrados en Python.

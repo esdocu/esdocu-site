@@ -14,10 +14,16 @@
     ],
     "cSpell.checkLimit": 5000,
     "cSpell.words": [
+        "Ámsterdam",
         "Esdocu",
+        "extensibilidad",
+        "Gmail",
+        "Keras",
+        "Matplotlib",
         "monitorea",
+        "NLTK",
         "Rossum",
-        "Ámsterdam"
+        "scikit"
     ],
     "cSpell.ignoreWords": [],
 }
