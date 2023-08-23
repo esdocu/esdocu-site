@@ -2,8 +2,9 @@
   "index": "¿Qué es Python?",
   "instalar-python": "Instalación de Python",
   "-- Parte 1": {
-    "title": "Parte 1: ",
+    "title": "Parte 1: El lenguaje Python",
     "type": "separator"
   },
-  "iniciando": "Iniciando con Python"
+  "iniciando": "Iniciando con Python",
+  "primer-programa": "Nuestro primer programa"
 }

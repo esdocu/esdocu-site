@@ -1,0 +1,32 @@
+# Módulos
+
+Una ventaja decisiva de Python, además del lenguaje de programación sencillo y flexible, es la gran cantidad de módulos incluidos, que en su totalidad forman la biblioteca estándar.
+Dichos módulos a menudo sirven como una colección útil de funcionalidad adicional. Existe, por ejemplo, el módulo `pprint` (un `print` visualmente más bonito), que proporciona la función `pprint`. Esta función te permite generar instancias de tipos de datos complejos claramente formateados en la pantalla. Por lo tanto, es una alternativa a la función `print` integrada cuando solo se va a generar una única instancia. Antes de que puedas usar un módulo, debes incluirlo usando la palabra clave `import`:
+
+```
+>>> import pprint
+```
+
+Ahora las funciones y constantes disponibles en `pprint` se pueden utilizar en el programa siguiente. En este caso, llamamos a la función `pprint.pprint` para generar claramente un diccionario más extenso:
+
+```
+>>> d = {"Python is": ["awesome", "brilliant", "mega cool", "simple and exciting"],
+"Python has": ["lots of modules", "always the right argument", "a nicely formatted
+screen output"]}
+>>> pprint.pprint(d)
+{'Python has': ['lots of modules',
+                'always the right argument',
+                'a nicely formatted screen output'],
+ 'Python is': ['awesome', 'brilliant', 'mega cool', 'simple and exciting']}
+```
+
+A modo de comparación, aquí está la salida sin formato usando la función `print` incorporada:
+
+```
+>>> print(d)
+{'Python is': ['awesome', 'brilliant', 'mega cool', 'simple and exciting'], 'Python
+has': ['lots of modules', 'always the right argument', 'a nicely formatted screen
+output']}
+```
+
+Gran parte del libro también está dedicado a la biblioteca estándar, así como a módulos y bibliotecas de terceros que aumentan de manera útil el alcance del lenguaje Python.

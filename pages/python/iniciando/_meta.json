@@ -3,5 +3,10 @@
   "flotantes": "Números de coma flotante",
   "cadenas-de-texto": "Cadenas de caracteres",
   "listas": "Listas",
-  "diccionarios": "Diccionarios"
+  "diccionarios": "Diccionarios",
+  "variables": "",
+  "expresiones-logicas": "",
+  "funciones-y-metodos": "Funciones y Métodos",
+  "salidas-en-pantalla": "",
+  "modulos": "Módulos"
 }
