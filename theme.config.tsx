@@ -72,14 +72,16 @@ const config: DocsThemeConfig = {
   // },
   docsRepositoryBase: 'https://github.com/esdocu/esdocu-site',
   useNextSeoProps() {
-    const { asPath } = useRouter()
     const { route } = useRouter()
-    if (asPath !== '/') {
-      return {
-        titleTemplate: '%s – Esdocu',
-        noindex: route === '/aviso-legal' || route === '/politica-de-cookies' || route === '/politica-de-privacidad'
-      }
+    let props = {}
+    if (route !== '/') {
+      props['titleTemplate'] = '%s – Esdocu'
+      props['noindex'] = route === '/aviso-legal' || route === '/politica-de-cookies' || route === '/politica-de-privacidad'
+    } else {
+      props['description'] = 'Un proyecto de cursos y traducciones al Español de la documentación de tecnologías Open Source.'
     }
+
+    return props
   },
   head: function useHead() {
     const { title } = useConfig()
@@ -95,10 +97,7 @@ const config: DocsThemeConfig = {
         <meta name="theme-color" content="#fff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="es" />
-        <meta
-          name="description"
-          content="Un proyecto de cursos y traducciones al Español de la documentación de tecnologías Open Source."
-        />
+
         <meta
           name="og:description"
           content="Un proyecto de cursos y traducciones al Español de la documentación de tecnologías Open Source."
@@ -131,6 +130,7 @@ const config: DocsThemeConfig = {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5376430835440290"

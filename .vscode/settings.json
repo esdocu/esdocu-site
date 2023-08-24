@@ -14,6 +14,7 @@
     ],
     "cSpell.checkLimit": 5000,
     "cSpell.words": [
+        "Adsense",
         "Ámsterdam",
         "äöüßéè",
         "banglejs",
@@ -26,9 +27,11 @@
         "expandibles",
         "extensibilidad",
         "Gmail",
+        "gtag",
         "Keras",
         "Matplotlib",
         "monitorea",
+        "nextra",
         "NLTK",
         "operandos",
         "philips",
@@ -38,7 +41,8 @@
         "tabulación",
         "tabulaciones",
         "Tessel",
-        "Tipeado"
+        "Tipeado",
+        "YPEZ"
     ],
     "cSpell.ignoreWords": [],
 }
