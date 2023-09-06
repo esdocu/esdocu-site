@@ -1,12 +1,12 @@
 # Instalación de Python
 
-Puedes descargar e instalar la última versión de Python desde el sitio web oficial de Python en http://www.python.org como un archivo de instalación para tu sistema operativo.
+Puedes descargar e instalar la última versión de Python desde el sitio web oficial de Python en https://www.python.org como un archivo de instalación para tu sistema operativo.
 
-Sin embargo, en muchos casos es más conveniente usar una distribución de Python. Además del propio Python, dicha distribución incluye una gran cantidad de extensiones de uso frecuente y también proporciona herramientas para una conveniente instalación posterior de módulos adicionales.
+Sin embargo, en muchos casos es más conveniente usar una **distribución de Python**. Además del propio Python, dicha distribución incluye una gran cantidad de extensiones de uso frecuente y también proporciona herramientas para una conveniente instalación posterior de módulos adicionales.
 
-En este curso, usaremos la distribución de Python llamada Anaconda, de Continuum Analytics. Casi todo lo que necesitamos para los programas de muestra ya está incluido en la instalación predeterminada de esa distribución.
+En este curso, usaremos la distribución de Python llamada **Anaconda**. Casi todo lo que necesitamos para los programas de muestra ya está incluido en la instalación predeterminada de esa distribución.
 
-Puedes descargar la versión más reciente de Anaconda en https://www.anaconda.com para Windows, macOS o Linux. Ten en cuenta que, por lo general, Anaconda no instala la versión más reciente de Python de forma predeterminada debido a su ciclo de lanzamiento independiente. A los efectos de este curso, nos referiremos a la versión 2022-05, cuyo valor predeterminado es Python 3.9. Se pueden instalar versiones más recientes del intérprete a través del repositorio de paquetes de Anaconda.
+Puedes descargar la versión más reciente de Anaconda en https://www.anaconda.com para Windows, macOS o Linux. Ten en cuenta que, por lo general, Anaconda no instala la versión más reciente de Python de forma predeterminada debido a su ciclo de lanzamiento independiente. A los efectos de este curso, nos referiremos a la versión 2023-07, cuyo valor predeterminado es Python 3.11. Se pueden instalar versiones más recientes del intérprete a través del repositorio de paquetes de Anaconda.
 
 > **Nota**
 > 
@@ -27,28 +27,28 @@ Cada vez que se haga referencia a un *shell* o al *command prompt* del sistema e
 
 Para Linux, Anaconda proporciona un script de instalación que puedes ejecutar en un shell. Para ello, en el directorio donde se encuentra el archivo de instalación, debes ejecutar el siguiente comando para iniciar el proceso de instalación:
 
-```sh
-bash Anaconda3-2022.05-Linux-x86_64.sh
+```console filename="Terminal"
+bash Anaconda3-2023.07-Linux-x86_64.sh
 ```
 
-Durante el proceso de instalación, puedes confirmar casi todas las indicaciones con `ENTER`. En un momento del proceso, debes confirmar que aceptas los términos de uso de Anaconda respondiendo "yes" a la pregunta correspondiente:
+Durante el proceso de instalación, puedes confirmar casi todas las indicaciones con `ENTER`. En un momento del proceso, debes confirmar que aceptas los términos de uso de Anaconda respondiendo `yes` a la pregunta correspondiente:
 
-```
+```plaintext filename="Terminal"
 Do you approve the license terms? [yes|no]
 >>> yes
 ```
 
-Al final del proceso de instalación, se te preguntará si deseas usar la versión de Python de la distribución de Anaconda como tu Python predeterminado. Si este es el caso, debes responder a la pregunta con un "yes".
+Al final del proceso de instalación, se te preguntará si deseas usar la versión de Python de la distribución de Anaconda como tu Python predeterminado. Si este es el caso, debes responder a la pregunta con un `yes`.
 
-```
+```plaintext filename="Terminal"
 Do you wish the installer to prepend the Anaconda3 install location
 to PATH in your /home/your_user/.bashrc ? [yes|no]
 [no] >>> yes
 ```
 
-Si no ingresas "yes" aquí, siempre deberás asegurarte de que la versión de Anaconda se inicie antes de iniciar Python en un shell:
+Si no ingresas `yes` aquí, siempre deberás asegurarte de que la versión de Anaconda se inicie antes de iniciar Python en un shell:
 
-```sh
+```console filename="Terminal"
 export PATH=/home/your_user/anaconda3/bin:$PATH
 ```
 
@@ -74,22 +74,22 @@ Python viene con muchos módulos para varios casos de uso en la instalación pre
 
 La forma más fácil de hacerlo suele ser a través del administrador de paquetes `pip` o `conda`. Por ejemplo, puedes usar:
 
-```
+```console filename="Terminal"
 pip install pandas
 ```
 
 o
 
-```
+```console filename="Terminal"
 conda install pandas
 ```
 
-para instalar el módulo pandas, que te permite procesar datos tabulares.
+para instalar el módulo `pandas`, que te permite procesar datos tabulares.
 
-## Usando Python
+## Python interactivo
 
-Cada instalación de Python incluye dos componentes importantes además del propio intérprete de Python, a saber, el modo interactivo e IDLE.
+Cada instalación de Python incluye dos componentes importantes además del propio intérprete de Python, a saber, el **modo interactivo** e **IDLE**.
 
-En el modo interactivo, también conocido como shell de Python, se pueden ingresar líneas de programa individuales y ver los resultados directamente. Por lo tanto, el modo interactivo es interesante para aprender el lenguaje Python, entre otras cosas, y por lo tanto se usa con frecuencia en este curso.
+En el **modo interactivo**, también conocido como *shell de Python*, se pueden ingresar líneas de programa individuales y ver los resultados directamente. Por lo tanto, el modo interactivo es interesante para aprender el lenguaje Python, entre otras cosas, y por lo tanto se usará con frecuencia en este curso.
 
-IDLE es un entorno de desarrollo de Python rudimentario con una interfaz gráfica de usuario. Cuando se inicia IDLE, inicialmente solo se abre una ventana que contiene un shell de Python. Además, se puede crear y editar un nuevo archivo de programa de Python a través del elemento de menú *Archivo > Nueva ventana*. Una vez que se ha guardado el archivo del programa, se puede ejecutar mediante el elemento de menú *Ejecutar > Ejecutar módulo* en el shell de Python de IDLE. Aparte de eso, IDLE proporciona al programador un par de funciones de comodidad, como el resaltado de colores de los elementos del código (resaltado de sintaxis) y la finalización automática del código.
+**IDLE** es un entorno de desarrollo de Python rudimentario con una interfaz gráfica de usuario. Cuando se inicia IDLE, inicialmente solo se abre una ventana que contiene un shell de Python. Además, se puede crear y editar un nuevo archivo de programa de Python a través del elemento de menú *Archivo > Nueva ventana*. Una vez que se ha guardado el archivo del programa, se puede ejecutar mediante el elemento de menú *Ejecutar > Ejecutar módulo* en el shell de Python de IDLE. Aparte de eso, IDLE proporciona al programador un par de funciones de comodidad, como el resaltado de colores de los elementos del código (resaltado de sintaxis) y la finalización automática del código.
