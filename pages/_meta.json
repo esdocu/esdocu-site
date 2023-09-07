@@ -11,10 +11,6 @@
     "title": "Cursos",
     "type": "menu",
     "items": {
-      "javascript-m": {
-        "title": "JavaScript",
-        "href": "/javascript"
-      },
       "python-m": {
         "title": "Python",
         "href": "/python"
@@ -25,17 +21,12 @@
     "title": "Traducciones",
     "type": "menu",
     "items": {
-      "javascript-m": {
+      "bootstrap": {
         "title": "Bootstrap",
         "href": "https://getbootstrap.esdocu.com",
         "newWindow": true
       }
     }
-  },
-  "javascript": {
-    "title": "JavaScript",
-    "type": "page",
-    "display": "hidden"
   },
   "python": {
     "title": "Python",
