@@ -52,7 +52,7 @@ module.exports = withNextra({
         permanent: true,
       },
       {
-        source: '/blog/page/:slug',
+        source: '/blog/:categ/:slug',
         destination: '/',
         permanent: true,
       },
