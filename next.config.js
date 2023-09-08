@@ -37,7 +37,22 @@ module.exports = withNextra({
         permanent: true,
       },
       {
+        source: '/proyectos',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/blog',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/blog/:slug',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/blog/page/:slug',
         destination: '/',
         permanent: true,
       },
@@ -46,6 +61,27 @@ module.exports = withNextra({
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/python/iniciando',
+        destination: '/python/conceptos',
+        permanent: true,
+      },
+      {
+        source: '/python/iniciando/:slug',
+        destination: '/python/conceptos',
+        permanent: true,
+      },
+      {
+        source: '/javascript',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/javascript/:slug',
+        destination: '/',
+        permanent: true,
+      },
+
     ];
   },
 })
