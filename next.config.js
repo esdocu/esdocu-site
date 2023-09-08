@@ -28,5 +28,24 @@ module.exports = withNextra({
     })
 
     return config
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/acerca',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/tags/:slug',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 })
