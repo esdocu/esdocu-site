@@ -81,7 +81,11 @@ module.exports = withNextra({
         destination: '/',
         permanent: true,
       },
-
+      {
+        source: '/javascript/:topic/:slug',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 })

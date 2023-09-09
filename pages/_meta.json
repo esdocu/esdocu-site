@@ -7,15 +7,9 @@
       "layout": "raw"
     }
   },
-  "cursos": {
-    "title": "Cursos",
-    "type": "menu",
-    "items": {
-      "python-m": {
-        "title": "Python",
-        "href": "/python"
-      }
-    }
+  "python": {
+    "title": "Curso de Python",
+    "type": "page"
   },
   "traducciones": {
     "title": "Traducciones",
@@ -28,10 +22,11 @@
       }
     }
   },
-  "python": {
-    "title": "Python",
+  "android-app": {
+    "title": "Android app ↗",
     "type": "page",
-    "display": "hidden"
+    "href": "https://play.google.com/store/apps/details?id=com.esdocu.cursos",
+    "newWindow": true
   },
   "contacto": {
     "title": "Contacto ↗",
