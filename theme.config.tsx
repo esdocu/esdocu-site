@@ -160,7 +160,14 @@ const config: DocsThemeConfig = {
     // error: '',
   },
   toc: {
-    title: 'EN ESTA PAGINA'
+    title: 'EN ESTA PAGINA',
+    extraContent: () => <>
+      <div className="mt-8">
+        Ultima actualización del curso:<br />
+        <strong>12 Sep 2023</strong>.
+      </div>
+      Nuevo contenido todos los días.
+    </>
   },
   editLink: {
     text: 'Editar esta página en GitHub →'
@@ -179,7 +186,8 @@ const config: DocsThemeConfig = {
     },
     defaultMenuCollapseLevel: 1,
     autoCollapse: true,
-    toggleButton: true
+    toggleButton: true,
+
   },
   footer: {
     text: footer,
