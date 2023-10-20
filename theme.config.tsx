@@ -164,7 +164,7 @@ const config: DocsThemeConfig = {
     extraContent: () => <>
       <div className="mt-8">
         Ultima actualización del curso:<br />
-        <strong>12 Sep 2023</strong>.
+        <strong>13 Sep 2023</strong>.
       </div>
       Nuevo contenido todos los días.
     </>
