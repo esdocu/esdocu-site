@@ -29,6 +29,11 @@
         "title": "Flutter",
         "href": "https://flutter-es.com",
         "newWindow": true
+      },
+      "go": {
+        "title": "Go (Golang)",
+        "href": "https://go.esdocu.com",
+        "newWindow": true
       }
     }
   },
