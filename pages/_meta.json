@@ -34,6 +34,11 @@
         "title": "Go (Golang)",
         "href": "https://go.esdocu.com",
         "newWindow": true
+      },
+      "docker": {
+        "title": "Docker",
+        "href": "https://docker.esdocu.com",
+        "newWindow": true
       }
     }
   },
