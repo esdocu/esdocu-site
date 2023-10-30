@@ -86,6 +86,26 @@ module.exports = withNextra({
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/docs/versions',
+        destination: 'https://bootstrap.esdocu.com/docs/versions',
+        permanent: true,
+      },
+      {
+        source: '/docs/5.1/:one',
+        destination: 'https://bootstrap.esdocu.com/docs/5.1/:one',
+        permanent: true,
+      },
+      {
+        source: '/docs/5.1/:one/:two',
+        destination: 'https://bootstrap.esdocu.com/docs/5.1/:one/:two',
+        permanent: true,
+      },
+      {
+        source: '/docs/5.1/:one/:two/:three',
+        destination: 'https://bootstrap.esdocu.com/docs/5.1/:one/:two/:three',
+        permanent: true,
+      },
     ];
   },
 })
