@@ -1,6 +1,6 @@
 import { Callout } from 'nextra/components'
 
-# JavaScript
+# Curso de JavaScript
 
 {/* 
 Inicio rápido
@@ -33,7 +33,11 @@ Expresiones regulares
 Aplicación de RegEx en JavaScript
 */}
 
-# ¿Qué es JavaScript?
+Bienvenido a nuestro curso de JavaScript donde aprenderás desde lo más básico del lenguaje hasta el desarrollo de varias aplicaciones de ejemplo.
+
+Comencemos desde el principio con la siguiente pregunta.
+
+## ¿Qué es JavaScript?
 
 JavaScript es un lenguaje de programación interpretado, multiplataforma y orientado a objetos, utilizado para desarrollar funcionalidades interactivas en el navegador web como animaciones, validación de formularios, comportamientos de botones, menús desplegables, entre muchas otras posibilidades.
 
@@ -47,7 +51,7 @@ JavaScript llega incluso a ser utilizado en otros sectores:
 - desarrollo de modelos de Machine Learning (Ej: TensorFlow)
 - robótica, plugins de navegadores web, Firebase functions, y más.
 
-# Conceptos
+## Conceptos
 
 Debido a que los conceptos básicos de la mayoría de los lenguajes de programación son iguales o muy similares, decidimos crear un curso exclusivo para explicar de forma sencilla los conceptos iniciales de programación.
 
@@ -55,7 +59,7 @@ Si eres completamente nuevo en el mundo de la programación o si en algún momen
 
 De esta forma también logramos que este y otros cursos de lenguajes sean más directos sin explicar cada vez los conceptos básicos que tal vez muchos estudiantes ya conozcan.
 
-# Un estándar para JavaScript
+## Un estándar para JavaScript
 
 JavaScript lleva varias décadas de existencia y en sus primeros años cada navegador web implementó JavaScript a su manera, lo que se convirtió en un gran problema para la compatibilidad. A causa de este problema, en 1997 se propuso crear un nuevo estándar, lo que concluyó en ECMA-262, el estándar que define un nuevo lenguaje de scripting llamado ECMAScript.
 
@@ -63,7 +67,7 @@ Tuvieron que transcurrir muchos años, pero afortunadamente en la actualidad el 
 
 Tenemos que mencionar ciertas excepciones. JavaScript sigue evolucionando y algunos navegadores implementan rápidamente las nuevas características, mientras que otros navegadores demoran más. Para conocer la compatibilidad de una característica de JavaScript con respecto a los navegadores web populares de la actualidad podemos utilizar el buscador del sitio web [Can I use](https://caniuse.com/).
 
-# Implementaciones de JavaScript
+## Implementaciones de JavaScript
 
 Aunque a menudo se utilicen los términos *ECMAScript* y *JavaScript* como sinónimos, JavaScript es mucho más de lo que se define en el estándar *ECMA-262*.
 
@@ -114,7 +118,7 @@ Estas son algunas de las posibilidades del BOM:
 
 Veremos todo estos casos a detalle en un capítulo dedicado al BOM.
 
-# Ediciones de ECMAScript
+## Ediciones de ECMAScript
 
 La sexta edición del estándar ECMA-262 (también conocida como ES6 o ES2015), fue publicada en el año 2015 y sigue siendo la más relevante hasta la actualidad por la cantidad de mejoras que introdujo.
 
@@ -124,31 +128,31 @@ Existen otras dos ediciones publicadas, la séptima (ES7 o ES2016) y octava (ES8
 
 Para finalizar esta sección vamos a mencionar que la novena edición del estándar, aún no publicada, promete importantes nuevas adiciones, entre ellas la carga dinámica de módulos ES6.
 
-# Algunos ejemplos
+## Algunos ejemplos
 
 Veamos algunos ejemplos JavaScript solo a modo de introducción ya que en los siguientes capítulos veremos en detalle cada unos de estos conceptos.
 
 Iniciemos por el ejemplo más típico en todo lenguaje de programación, el famoso "Hola mundo". 
 
-## Hola mundo
+### Hola mundo
 
 Debido a la amplitud de contextos en los que se puede utilizar JavaScript, existen varias formas de realizar un ejemplo "Hola mundo", pero el más sencillo de ellos es simplemente la siguiente línea:
 
-```javascript
+```javascript filename="JavaScript"
 console.log("¡Hola mundo!");
 ```
 
 Veremos en el primer *Codelab de JavaScript* cómo ejecutar esta línea directamente en la consola del navegador web, con lo que luego de ejecutarla veremos como salida en la misma consola el texto:
 
-```bash
+```plaintext filename="Salida en consola"
 ¡Hola mundo!
 ```
 
-## Variables
+### Variables
 
 En JavaScript las variables son débilmente tipadas, lo que significa que pueden almacenar valores de cualquier tipo de dato en cualquier momento, es decir que las siguientes líneas son completamente válidas:
 
-```javascript
+```javascript filename="JavaScript"
 var saludo = "Hola";
 saludo = 12;
 ```
@@ -159,11 +163,11 @@ Para declarar una variable utilizamos la palabra clave *var*.
 
 En lecciones dedicadas a las variables veremos que existen otras formas de declarar variables.
 
-# Sentencias de control de flujo
+### Sentencias de control de flujo
 
 JavaScript define las sentencias de control de flujo típicas, veamos las mas utilizadas:
 
-```javascript
+```javascript filename="JavaScript"
 // Sentencias condicional
 if (year >= 2001) {
   console.log('21st century');
@@ -186,11 +190,11 @@ Como vimos en el curso de *Conceptos de programación* la sentencia de control c
 
 Veremos todas las sentencias de control de flujo, todas sus posibilidades y ejemplos en un capítulo dedicado a ellas.
 
-## Funciones
+### Funciones
 
 Las funciones en JavaScript son declaradas utilizando la palabra clave *function*:
 
-```javascript
+```javascript filename="JavaScript"
 // Una función que recibe un parámetro
 function saludar(nombre) {
   console.log("Hola " + nombre);
@@ -202,17 +206,17 @@ saludar("Ian");
 
 Este fragmento de código produce la siguiente salida en consola:
 
-```bash
+```plaintext filename="Salida en consola"
 Hola Ian
 ```
 
 Las funciones son una herramienta muy importante en programación, veremos todas sus posibilidades en el capítulo de *Funciones*.
 
-## Clases
+### Clases
 
 A partir de ECMAScript 6 trabajar con clases en JavaScript se vuelve más simple utilizando la palabra clave *class*, veamos un ejemplo:
 
-```javascript
+```javascript filename="JavaScript"
 class Poligono {
   constructor (height, width) {
     this.height = height;
@@ -235,7 +239,7 @@ console.log(cuadrado.area); // 100
 
 Este fragmento de código produce la siguiente salida en consola:
 
-```bash
+```plaintext filename="Salida en consola"
 100
 ```
 

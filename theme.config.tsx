@@ -161,13 +161,13 @@ const config: DocsThemeConfig = {
   },
   toc: {
     title: 'EN ESTA PAGINA',
-    extraContent: () => <>
-      <div className="mt-8">
-        Ultima actualización del curso:<br />
-        <strong>13 Sep 2023</strong>.
-      </div>
-      Nuevo contenido todos los días.
-    </>
+    // extraContent: () => <>
+    //   <div className="mt-8">
+    //     Ultima actualización del curso:<br />
+    //     <strong>13 Sep 2023</strong>.
+    //   </div>
+    //   Nuevo contenido todos los días.
+    // </>
   },
   editLink: {
     text: 'Editar esta página en GitHub →'
