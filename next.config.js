@@ -62,6 +62,11 @@ module.exports = withNextra({
         permanent: true,
       },
       {
+        source: '/feed.xml',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/python/iniciando',
         destination: '/python/conceptos',
         permanent: true,
