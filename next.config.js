@@ -111,6 +111,51 @@ module.exports = withNextra({
         destination: 'https://bootstrap.esdocu.com/docs/5.1/:one/:two/:three',
         permanent: true,
       },
+      {
+        source: '/conceptos/:one',
+        destination: 'https://esdocu.com/conceptos/:one',
+        permanent: true,
+      },
+      {
+        source: '/conceptos/:one/:two',
+        destination: 'https://esdocu.dev/conceptos/:one/:two',
+        permanent: true,
+      },
+      {
+        source: '/conceptos/:one/:two/:three',
+        destination: 'https://esdocu.dev/conceptos/:one/:two/:three',
+        permanent: true,
+      },
+      {
+        source: '/javascript/:one',
+        destination: 'https://esdocu.com/javascript/:one',
+        permanent: true,
+      },
+      {
+        source: '/javascript/:one/:two',
+        destination: 'https://esdocu.dev/javascript/:one/:two',
+        permanent: true,
+      },
+      {
+        source: '/javascript/:one/:two/:three',
+        destination: 'https://esdocu.dev/javascript/:one/:two/:three',
+        permanent: true,
+      },
+      {
+        source: '/python/:one',
+        destination: 'https://esdocu.com/python/:one',
+        permanent: true,
+      },
+      {
+        source: '/python/:one/:two',
+        destination: 'https://esdocu.dev/python/:one/:two',
+        permanent: true,
+      },
+      {
+        source: '/python/:one/:two/:three',
+        destination: 'https://esdocu.dev/python/:one/:two/:three',
+        permanent: true,
+      },
     ];
   },
 })
