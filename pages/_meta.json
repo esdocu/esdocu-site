@@ -7,42 +7,6 @@
       "layout": "raw"
     }
   },
-  "conceptos": {
-    "title": "Conceptos de programación",
-    "type": "page",
-    "display": "hidden"
-  },
-  "python": {
-    "title": "Curso de Python",
-    "type": "page",
-    "display": "hidden"
-  },
-  "javascript": {
-    "title": "Curso de JavaScript",
-    "type": "page",
-    "display": "hidden"
-  },
-  "cursos": {
-    "title": "Cursos",
-    "type": "menu",
-    "items": {
-      "conceptos": {
-        "title": "Conceptos de programación",
-        "type": "page",
-        "href": "/conceptos"
-      },
-      "python": {
-        "title": "Curso de Python",
-        "type": "page",
-        "href": "/python"
-      },
-      "javascript": {
-        "title": "Curso de JavaScript",
-        "type": "page",
-        "href": "/javascript"
-      }
-    }
-  },
   "traducciones": {
     "title": "Traducciones",
     "type": "menu",
