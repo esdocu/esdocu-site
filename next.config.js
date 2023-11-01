@@ -67,31 +67,6 @@ module.exports = withNextra({
         permanent: true,
       },
       {
-        source: '/python/iniciando',
-        destination: '/python/conceptos',
-        permanent: true,
-      },
-      {
-        source: '/python/iniciando/:slug',
-        destination: '/python/conceptos',
-        permanent: true,
-      },
-      {
-        source: '/javascript',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/javascript/:slug',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/javascript/:topic/:slug',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/docs/versions',
         destination: 'https://bootstrap.esdocu.com/docs/versions',
         permanent: true,
@@ -154,6 +129,31 @@ module.exports = withNextra({
       {
         source: '/python/:one/:two/:three',
         destination: 'https://esdocu.dev/python/:one/:two/:three',
+        permanent: true,
+      },
+      {
+        source: '/python/iniciando',
+        destination: '/python/conceptos',
+        permanent: true,
+      },
+      {
+        source: '/python/iniciando/:slug',
+        destination: '/python/conceptos',
+        permanent: true,
+      },
+      {
+        source: '/javascript',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/javascript/:slug',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/javascript/:topic/:slug',
+        destination: '/',
         permanent: true,
       },
     ];
