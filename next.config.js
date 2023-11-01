@@ -87,6 +87,11 @@ module.exports = withNextra({
         permanent: true,
       },
       {
+        source: '/conceptos',
+        destination: 'https://esdocu.dev/conceptos',
+        permanent: true,
+      },
+      {
         source: '/conceptos/:one',
         destination: 'https://esdocu.dev/conceptos/:one',
         permanent: true,
@@ -102,6 +107,11 @@ module.exports = withNextra({
         permanent: true,
       },
       {
+        source: '/javascript',
+        destination: 'https://esdocu.dev/javascript',
+        permanent: true,
+      },
+      {
         source: '/javascript/:one',
         destination: 'https://esdocu.dev/javascript/:one',
         permanent: true,
@@ -114,6 +124,11 @@ module.exports = withNextra({
       {
         source: '/javascript/:one/:two/:three',
         destination: 'https://esdocu.dev/javascript/:one/:two/:three',
+        permanent: true,
+      },
+      {
+        source: '/python',
+        destination: 'https://esdocu.dev/python',
         permanent: true,
       },
       {
