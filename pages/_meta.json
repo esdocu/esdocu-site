@@ -7,37 +7,6 @@
       "layout": "raw"
     }
   },
-  "traducciones": {
-    "title": "Traducciones",
-    "type": "menu",
-    "items": {
-      "bootstrap": {
-        "title": "Bootstrap",
-        "href": "https://bootstrap-esdocu.com",
-        "newWindow": true
-      },
-      "dart": {
-        "title": "Dart",
-        "href": "https://dart-es.com",
-        "newWindow": true
-      },
-      "flutter": {
-        "title": "Flutter",
-        "href": "https://flutter-es.com",
-        "newWindow": true
-      },
-      "go": {
-        "title": "Go (Golang)",
-        "href": "https://go.esdocu.com",
-        "newWindow": true
-      },
-      "docker": {
-        "title": "Docker",
-        "href": "https://docker.esdocu.com",
-        "newWindow": true
-      }
-    }
-  },
   "contacto": {
     "title": "Contacto ↗",
     "type": "page",
